@@ -1,0 +1,13 @@
+strings:
+  inputs: ../E-CommercialApp/Resources/ja.lproj
+  filter: .+\.strings$
+  outputs:
+    - templatePath: stringsTemplate.stencil
+      output: ../E-CommercialApp/Resources/Generated/Localizable.swift
+xcassets:
+  inputs:
+    - ../E-CommercialApp/Resources/Assets.xcassets
+  outputs:
+    - templatePath: assetsTemplate.stencil
+      output: ../E-CommercialApp/Resources/Generated/Assets.swift
+
