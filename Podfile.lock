@@ -1,16 +1,31 @@
 PODS:
+  - FBSDKCoreKit (7.0.1):
+    - FBSDKCoreKit/Basics (= 7.0.1)
+    - FBSDKCoreKit/Core (= 7.0.1)
+  - FBSDKCoreKit/Basics (7.0.1)
+  - FBSDKCoreKit/Core (7.0.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (7.0.1):
+    - FBSDKLoginKit/Login (= 7.0.1)
+  - FBSDKLoginKit/Login (7.0.1):
+    - FBSDKCoreKit (~> 7.0.1)
   - SwiftGen (6.2.0)
 
 DEPENDENCIES:
+  - FBSDKLoginKit
   - SwiftGen
 
 SPEC REPOS:
   trunk:
+    - FBSDKCoreKit
+    - FBSDKLoginKit
     - SwiftGen
 
 SPEC CHECKSUMS:
+  FBSDKCoreKit: 9cc05bec0568a5955c82eb59ae95da0fe125b88d
+  FBSDKLoginKit: ecc6fd43c81b60f5b5e9388d58f137aff4a5d00b
   SwiftGen: 77e88c8609381660cc1084c5ba8e1dc6065de692
 
-PODFILE CHECKSUM: 17981344648eab58388a39bad524742809cc4a18
+PODFILE CHECKSUM: 7d78347f80ba802e005577e4725c230917c5c2c1
 
 COCOAPODS: 1.9.3

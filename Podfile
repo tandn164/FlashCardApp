@@ -7,4 +7,5 @@ target 'E-CommercialApp' do
 
   # Pods for E-CommercialApp
   pod 'SwiftGen'
+  pod 'FBSDKLoginKit'
 end

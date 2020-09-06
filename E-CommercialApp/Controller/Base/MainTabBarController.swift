@@ -83,9 +83,6 @@ final class MainTabBarController: UITabBarController {
             
             let viewController = BaseNavigationController(rootViewController: tab.viewController)
             viewController.tabBarItem = tabBarItem
-            if tab.viewController is UserViewController {
-                viewController.setNavigationBarHidden(true, animated: true)
-            }
             return viewController
         }
         
