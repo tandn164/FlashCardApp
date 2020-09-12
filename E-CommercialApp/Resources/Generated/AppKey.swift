@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct AppKey {
+    static let token = "token"
+}
