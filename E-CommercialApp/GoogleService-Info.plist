@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>515569268975-5id6hbm18hptd59oe9jtge50ag0fg69q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.515569268975-5id6hbm18hptd59oe9jtge50ag0fg69q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCtnaQuUBdMPZ95ONIlznMbIFrPyxtHo0g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>515569268975</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>tan.nd164.E-CommercialApp</string>
+	<key>PROJECT_ID</key>
+	<string>e-commercial-app-7f038</string>
+	<key>STORAGE_BUCKET</key>
+	<string>e-commercial-app-7f038.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:515569268975:ios:5e43bc1bb7d1e158e4c31a</string>
+	<key>DATABASE_URL</key>
+	<string>https://e-commercial-app-7f038.firebaseio.com</string>
+</dict>
+</plist>

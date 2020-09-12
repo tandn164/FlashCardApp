@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		17B132E843CBD876058188ED /* Pods_E_CommercialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5A2C3BC4AAA8357722368A /* Pods_E_CommercialApp.framework */; };
+		4D05EBBE250B5836001F79F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D05EBBD250B5836001F79F8 /* GoogleService-Info.plist */; };
 		4D9DDB8F2503EB2C0057CB23 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDB8E2503EB2C0057CB23 /* AppColor.swift */; };
 		4D9DDB912503EB370057CB23 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDB902503EB370057CB23 /* AppConfig.swift */; };
 		4D9DDB932503EB400057CB23 /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDB922503EB400057CB23 /* AppKey.swift */; };
@@ -17,6 +18,20 @@
 		4D9DDB9F2503EF640057CB23 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDB9D2503EF640057CB23 /* UserViewController.swift */; };
 		4D9DDBA02503EF640057CB23 /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9DDB9E2503EF640057CB23 /* UserViewController.xib */; };
 		4D9DDBA32503EFBA0057CB23 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBA22503EFBA0057CB23 /* BaseNavigationController.swift */; };
+		4D9DDBA82504968C0057CB23 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBA62504968C0057CB23 /* SignInViewController.swift */; };
+		4D9DDBA92504968C0057CB23 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9DDBA72504968C0057CB23 /* SignInViewController.xib */; };
+		4D9DDBAC250496990057CB23 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBAA250496990057CB23 /* SignUpViewController.swift */; };
+		4D9DDBAD250496990057CB23 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9DDBAB250496990057CB23 /* SignUpViewController.xib */; };
+		4D9DDBAF250496DE0057CB23 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBAE250496DE0057CB23 /* BaseViewController.swift */; };
+		4D9DDBB32504997C0057CB23 /* UserTopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBB12504997C0057CB23 /* UserTopTableViewCell.swift */; };
+		4D9DDBB42504997C0057CB23 /* UserTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9DDBB22504997C0057CB23 /* UserTopTableViewCell.xib */; };
+		4D9DDBB625049DF70057CB23 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBB525049DF70057CB23 /* RoundButton.swift */; };
+		4D9DDBB925049F140057CB23 /* UICollectionViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBB725049F140057CB23 /* UICollectionViewController+Extension.swift */; };
+		4D9DDBBA25049F140057CB23 /* UITableViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBB825049F140057CB23 /* UITableViewController+Extension.swift */; };
+		4D9DDBBC2504A0BB0057CB23 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBBB2504A0BB0057CB23 /* UIImageView+Extension.swift */; };
+		4D9DDBBE2504A48C0057CB23 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBBD2504A48C0057CB23 /* UIViewController+Extension.swift */; };
+		4D9DDBC02504D9DB0057CB23 /* UIAlertViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBBF2504D9DB0057CB23 /* UIAlertViewController+Extension.swift */; };
+		4DA1FB7D250CD99E00C73D21 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1FB7C250CD99E00C73D21 /* Api.swift */; };
 		4DD7DEFB2503B16A0088BD8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7DEFA2503B16A0088BD8D /* AppDelegate.swift */; };
 		4DD7DF022503B16A0088BD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD7DF002503B16A0088BD8D /* Main.storyboard */; };
 		4DD7DF042503B16D0088BD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD7DF032503B16D0088BD8D /* Assets.xcassets */; };
@@ -29,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		12D4E2A674BC5539A807F99F /* Pods-E-CommercialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-CommercialApp.debug.xcconfig"; path = "Target Support Files/Pods-E-CommercialApp/Pods-E-CommercialApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4D05EBBD250B5836001F79F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D9DDB8E2503EB2C0057CB23 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppColor.swift; path = "E-CommercialApp/Resources/Generated/AppColor.swift"; sourceTree = SOURCE_ROOT; };
 		4D9DDB902503EB370057CB23 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppConfig.swift; path = "E-CommercialApp/Resources/Generated/AppConfig.swift"; sourceTree = SOURCE_ROOT; };
 		4D9DDB922503EB400057CB23 /* AppKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppKey.swift; path = "E-CommercialApp/Resources/Generated/AppKey.swift"; sourceTree = SOURCE_ROOT; };
@@ -38,6 +54,20 @@
 		4D9DDB9D2503EF640057CB23 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		4D9DDB9E2503EF640057CB23 /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
 		4D9DDBA22503EFBA0057CB23 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		4D9DDBA62504968C0057CB23 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4D9DDBA72504968C0057CB23 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		4D9DDBAA250496990057CB23 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4D9DDBAB250496990057CB23 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		4D9DDBAE250496DE0057CB23 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4D9DDBB12504997C0057CB23 /* UserTopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTopTableViewCell.swift; sourceTree = "<group>"; };
+		4D9DDBB22504997C0057CB23 /* UserTopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTopTableViewCell.xib; sourceTree = "<group>"; };
+		4D9DDBB525049DF70057CB23 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		4D9DDBB725049F140057CB23 /* UICollectionViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+Extension.swift"; sourceTree = "<group>"; };
+		4D9DDBB825049F140057CB23 /* UITableViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extension.swift"; sourceTree = "<group>"; };
+		4D9DDBBB2504A0BB0057CB23 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		4D9DDBBD2504A48C0057CB23 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4D9DDBBF2504D9DB0057CB23 /* UIAlertViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertViewController+Extension.swift"; sourceTree = "<group>"; };
+		4DA1FB7C250CD99E00C73D21 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		4DD7DEF72503B16A0088BD8D /* E-CommercialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-CommercialApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD7DEFA2503B16A0088BD8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD7DF012503B16A0088BD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,8 +119,38 @@
 			children = (
 				4D9DDB9D2503EF640057CB23 /* UserViewController.swift */,
 				4D9DDB9E2503EF640057CB23 /* UserViewController.xib */,
+				4D9DDBB02504995D0057CB23 /* Cells */,
+				4D9DDBA5250496610057CB23 /* SignIn */,
+				4D9DDBA42504964D0057CB23 /* SignUp */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		4D9DDBA42504964D0057CB23 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				4D9DDBAA250496990057CB23 /* SignUpViewController.swift */,
+				4D9DDBAB250496990057CB23 /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		4D9DDBA5250496610057CB23 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				4D9DDBA62504968C0057CB23 /* SignInViewController.swift */,
+				4D9DDBA72504968C0057CB23 /* SignInViewController.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		4D9DDBB02504995D0057CB23 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4D9DDBB12504997C0057CB23 /* UserTopTableViewCell.swift */,
+				4D9DDBB22504997C0057CB23 /* UserTopTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		4DD7DEEE2503B16A0088BD8D = {
@@ -115,6 +175,7 @@
 		4DD7DEF92503B16A0088BD8D /* E-CommercialApp */ = {
 			isa = PBXGroup;
 			children = (
+				4D05EBBD250B5836001F79F8 /* GoogleService-Info.plist */,
 				4DD7DF152503B5280088BD8D /* Resources */,
 				4DD7DF142503B51B0088BD8D /* APIs */,
 				4DD7DF132503B5090088BD8D /* Models */,
@@ -160,7 +221,12 @@
 		4DD7DF112503B4E90088BD8D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4D9DDBB725049F140057CB23 /* UICollectionViewController+Extension.swift */,
+				4D9DDBB825049F140057CB23 /* UITableViewController+Extension.swift */,
 				4D9DDB942503EC5F0057CB23 /* UIColor+Extension.swift */,
+				4D9DDBBB2504A0BB0057CB23 /* UIImageView+Extension.swift */,
+				4D9DDBBD2504A48C0057CB23 /* UIViewController+Extension.swift */,
+				4D9DDBBF2504D9DB0057CB23 /* UIAlertViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +234,7 @@
 		4DD7DF122503B4F70088BD8D /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				4D9DDBB525049DF70057CB23 /* RoundButton.swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -182,6 +249,7 @@
 		4DD7DF142503B51B0088BD8D /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				4DA1FB7C250CD99E00C73D21 /* Api.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -211,6 +279,7 @@
 			children = (
 				4DD7DF182503B7380088BD8D /* MainTabBarController.swift */,
 				4D9DDBA22503EFBA0057CB23 /* BaseNavigationController.swift */,
+				4D9DDBAE250496DE0057CB23 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -252,6 +321,7 @@
 				4DD7DEF42503B16A0088BD8D /* Frameworks */,
 				4DD7DEF52503B16A0088BD8D /* Resources */,
 				4D9DDB962503ED870057CB23 /* SwiftGen */,
+				0CDD6917F81576F7241F6DBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,8 +374,12 @@
 				4DD7DF072503B16D0088BD8D /* LaunchScreen.storyboard in Resources */,
 				4D9DDBA02503EF640057CB23 /* UserViewController.xib in Resources */,
 				4DD7DF212503D3C90088BD8D /* Localizable.strings in Resources */,
+				4D9DDBB42504997C0057CB23 /* UserTopTableViewCell.xib in Resources */,
 				4D9DDB9C2503EF0A0057CB23 /* HomeViewController.xib in Resources */,
+				4D9DDBA92504968C0057CB23 /* SignInViewController.xib in Resources */,
 				4DD7DF042503B16D0088BD8D /* Assets.xcassets in Resources */,
+				4D05EBBE250B5836001F79F8 /* GoogleService-Info.plist in Resources */,
+				4D9DDBAD250496990057CB23 /* SignUpViewController.xib in Resources */,
 				4DD7DF022503B16A0088BD8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +387,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0CDD6917F81576F7241F6DBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-CommercialApp/Pods-E-CommercialApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-CommercialApp/Pods-E-CommercialApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E-CommercialApp/Pods-E-CommercialApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4D9DDB962503ED870057CB23 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,16 +451,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9DDBB625049DF70057CB23 /* RoundButton.swift in Sources */,
 				4DD7DF192503B7380088BD8D /* MainTabBarController.swift in Sources */,
+				4D9DDBB925049F140057CB23 /* UICollectionViewController+Extension.swift in Sources */,
 				4D9DDB9F2503EF640057CB23 /* UserViewController.swift in Sources */,
 				4D9DDB8F2503EB2C0057CB23 /* AppColor.swift in Sources */,
 				4D9DDB932503EB400057CB23 /* AppKey.swift in Sources */,
 				4DD7DF2F2503DA200088BD8D /* Localizable.swift in Sources */,
+				4D9DDBC02504D9DB0057CB23 /* UIAlertViewController+Extension.swift in Sources */,
+				4D9DDBBA25049F140057CB23 /* UITableViewController+Extension.swift in Sources */,
+				4D9DDBBE2504A48C0057CB23 /* UIViewController+Extension.swift in Sources */,
+				4D9DDBAF250496DE0057CB23 /* BaseViewController.swift in Sources */,
 				4D9DDB912503EB370057CB23 /* AppConfig.swift in Sources */,
 				4D9DDB9B2503EF0A0057CB23 /* HomeViewController.swift in Sources */,
 				4D9DDBA32503EFBA0057CB23 /* BaseNavigationController.swift in Sources */,
+				4D9DDBA82504968C0057CB23 /* SignInViewController.swift in Sources */,
 				4DD7DF302503DA200088BD8D /* Assets.swift in Sources */,
+				4DA1FB7D250CD99E00C73D21 /* Api.swift in Sources */,
 				4DD7DEFB2503B16A0088BD8D /* AppDelegate.swift in Sources */,
+				4D9DDBAC250496990057CB23 /* SignUpViewController.swift in Sources */,
+				4D9DDBBC2504A0BB0057CB23 /* UIImageView+Extension.swift in Sources */,
+				4D9DDBB32504997C0057CB23 /* UserTopTableViewCell.swift in Sources */,
 				4D9DDB952503EC5F0057CB23 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +628,7 @@
 			baseConfigurationReference = 12D4E2A674BC5539A807F99F /* Pods-E-CommercialApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62R3ZN8B42;
 				INFOPLIST_FILE = "E-CommercialApp/Info.plist";
@@ -536,6 +639,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tan.nd164.E-CommercialApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -546,6 +650,7 @@
 			baseConfigurationReference = 4FD4D11086F64BD9CF0B8467 /* Pods-E-CommercialApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62R3ZN8B42;
 				INFOPLIST_FILE = "E-CommercialApp/Info.plist";
@@ -556,6 +661,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tan.nd164.E-CommercialApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
