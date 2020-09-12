@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.2.2)
   - FBSDKCoreKit (7.0.1):
     - FBSDKCoreKit/Basics (= 7.0.1)
     - FBSDKCoreKit/Core (= 7.0.1)
@@ -12,20 +13,23 @@ PODS:
   - SwiftGen (6.2.0)
 
 DEPENDENCIES:
+  - Alamofire
   - FBSDKLoginKit
   - SwiftGen
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - FBSDKCoreKit
     - FBSDKLoginKit
     - SwiftGen
 
 SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   FBSDKCoreKit: 9cc05bec0568a5955c82eb59ae95da0fe125b88d
   FBSDKLoginKit: ecc6fd43c81b60f5b5e9388d58f137aff4a5d00b
   SwiftGen: 77e88c8609381660cc1084c5ba8e1dc6065de692
 
-PODFILE CHECKSUM: 7d78347f80ba802e005577e4725c230917c5c2c1
+PODFILE CHECKSUM: 9c0259420a544862b3e99f074bcb7b870b7ccbd4
 
 COCOAPODS: 1.9.3

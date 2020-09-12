@@ -32,6 +32,10 @@
 		4D9DDBBE2504A48C0057CB23 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBBD2504A48C0057CB23 /* UIViewController+Extension.swift */; };
 		4D9DDBC02504D9DB0057CB23 /* UIAlertViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDBBF2504D9DB0057CB23 /* UIAlertViewController+Extension.swift */; };
 		4DA1FB7D250CD99E00C73D21 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1FB7C250CD99E00C73D21 /* Api.swift */; };
+		4DA1FB7F250CEDB500C73D21 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1FB7E250CEDB500C73D21 /* Log.swift */; };
+		4DA1FB81250CEE6700C73D21 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1FB80250CEE6700C73D21 /* AccountManager.swift */; };
+		4DA1FB83250CEEB400C73D21 /* DataLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1FB82250CEEB400C73D21 /* DataLocal.swift */; };
+		4DA1FB85250CEF7400C73D21 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1FB84250CEF7400C73D21 /* Result.swift */; };
 		4DD7DEFB2503B16A0088BD8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7DEFA2503B16A0088BD8D /* AppDelegate.swift */; };
 		4DD7DF022503B16A0088BD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD7DF002503B16A0088BD8D /* Main.storyboard */; };
 		4DD7DF042503B16D0088BD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD7DF032503B16D0088BD8D /* Assets.xcassets */; };
@@ -68,6 +72,10 @@
 		4D9DDBBD2504A48C0057CB23 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4D9DDBBF2504D9DB0057CB23 /* UIAlertViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertViewController+Extension.swift"; sourceTree = "<group>"; };
 		4DA1FB7C250CD99E00C73D21 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		4DA1FB7E250CEDB500C73D21 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Log.swift; path = "E-CommercialApp/APIs/Log.swift"; sourceTree = SOURCE_ROOT; };
+		4DA1FB80250CEE6700C73D21 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountManager.swift; path = "E-CommercialApp/APIs/AccountManager.swift"; sourceTree = SOURCE_ROOT; };
+		4DA1FB82250CEEB400C73D21 /* DataLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataLocal.swift; path = "E-CommercialApp/APIs/DataLocal.swift"; sourceTree = SOURCE_ROOT; };
+		4DA1FB84250CEF7400C73D21 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Result.swift; path = "E-CommercialApp/APIs/Result.swift"; sourceTree = SOURCE_ROOT; };
 		4DD7DEF72503B16A0088BD8D /* E-CommercialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-CommercialApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD7DEFA2503B16A0088BD8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD7DF012503B16A0088BD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -214,6 +222,9 @@
 		4DD7DF102503B4DB0088BD8D /* Ultilities */ = {
 			isa = PBXGroup;
 			children = (
+				4DA1FB7E250CEDB500C73D21 /* Log.swift */,
+				4DA1FB80250CEE6700C73D21 /* AccountManager.swift */,
+				4DA1FB82250CEEB400C73D21 /* DataLocal.swift */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -242,6 +253,7 @@
 		4DD7DF132503B5090088BD8D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4DA1FB84250CEF7400C73D21 /* Result.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -452,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D9DDBB625049DF70057CB23 /* RoundButton.swift in Sources */,
+				4DA1FB7F250CEDB500C73D21 /* Log.swift in Sources */,
 				4DD7DF192503B7380088BD8D /* MainTabBarController.swift in Sources */,
 				4D9DDBB925049F140057CB23 /* UICollectionViewController+Extension.swift in Sources */,
 				4D9DDB9F2503EF640057CB23 /* UserViewController.swift in Sources */,
@@ -461,8 +474,10 @@
 				4D9DDBC02504D9DB0057CB23 /* UIAlertViewController+Extension.swift in Sources */,
 				4D9DDBBA25049F140057CB23 /* UITableViewController+Extension.swift in Sources */,
 				4D9DDBBE2504A48C0057CB23 /* UIViewController+Extension.swift in Sources */,
+				4DA1FB83250CEEB400C73D21 /* DataLocal.swift in Sources */,
 				4D9DDBAF250496DE0057CB23 /* BaseViewController.swift in Sources */,
 				4D9DDB912503EB370057CB23 /* AppConfig.swift in Sources */,
+				4DA1FB85250CEF7400C73D21 /* Result.swift in Sources */,
 				4D9DDB9B2503EF0A0057CB23 /* HomeViewController.swift in Sources */,
 				4D9DDBA32503EFBA0057CB23 /* BaseNavigationController.swift in Sources */,
 				4D9DDBA82504968C0057CB23 /* SignInViewController.swift in Sources */,
@@ -473,6 +488,7 @@
 				4D9DDBBC2504A0BB0057CB23 /* UIImageView+Extension.swift in Sources */,
 				4D9DDBB32504997C0057CB23 /* UserTopTableViewCell.swift in Sources */,
 				4D9DDB952503EC5F0057CB23 /* UIColor+Extension.swift in Sources */,
+				4DA1FB81250CEE6700C73D21 /* AccountManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

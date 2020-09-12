@@ -6,4 +6,21 @@
 //  Copyright © 2020 Nguyễn Đức Tân. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct AppConfig {
+    
+    static let developUrl = ""
+    static let stagingUrl = ""
+    
+    static var baseUrl: String = {
+        var string = developUrl
+        #if !DEBUG
+        string = stagingUrl
+        #endif
+        if ProcessInfo.processInfo.environment["staging"] == "on" {
+            string = stagingUrl
+        }
+        return string
+    }()
+}
