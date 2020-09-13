@@ -43,6 +43,10 @@
 		4DD7DF212503D3C90088BD8D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DD7DF232503D3C90088BD8D /* Localizable.strings */; };
 		4DD7DF2F2503DA200088BD8D /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7DF2D2503DA200088BD8D /* Localizable.swift */; };
 		4DD7DF302503DA200088BD8D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7DF2E2503DA200088BD8D /* Assets.swift */; };
+		4DF6BFD6250E3BEF00E76329 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF6BFD4250E3BEF00E76329 /* LearnViewController.swift */; };
+		4DF6BFD7250E3BEF00E76329 /* LearnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF6BFD5250E3BEF00E76329 /* LearnViewController.xib */; };
+		4DF6BFD9250E409E00E76329 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF6BFD8250E409E00E76329 /* DeviceInfo.swift */; };
+		4DF6BFDB250E410A00E76329 /* LoadingHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF6BFDA250E410A00E76329 /* LoadingHud.swift */; };
 		8EA695C2091A669D00ED4A3E /* Pods_FlashCardApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6348F1B614DC0503671E94 /* Pods_FlashCardApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +92,10 @@
 		4DD7DF2A2503D60D0088BD8D /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		4DD7DF2D2503DA200088BD8D /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		4DD7DF2E2503DA200088BD8D /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		4DF6BFD4250E3BEF00E76329 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		4DF6BFD5250E3BEF00E76329 /* LearnViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearnViewController.xib; sourceTree = "<group>"; };
+		4DF6BFD8250E409E00E76329 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		4DF6BFDA250E410A00E76329 /* LoadingHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingHud.swift; sourceTree = "<group>"; };
 		AE6348F1B614DC0503671E94 /* Pods_FlashCardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashCardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4806C4E1E75F8DF98C9E53 /* Pods-FlashCardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardApp.debug.xcconfig"; path = "Target Support Files/Pods-FlashCardApp/Pods-FlashCardApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +183,8 @@
 				4DA1FB96250D200300C73D21 /* Log.swift */,
 				4DA1FB97250D200300C73D21 /* AccountManager.swift */,
 				4DA1FB98250D200300C73D21 /* DataLocal.swift */,
+				4DF6BFD8250E409E00E76329 /* DeviceInfo.swift */,
+				4DF6BFDA250E410A00E76329 /* LoadingHud.swift */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -229,6 +239,7 @@
 		4DD7DF0E2503B1B10088BD8D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4DF6BFD3250E3BD900E76329 /* Learn */,
 				4D9DDB982503EEF40057CB23 /* User */,
 				4D9DDB972503EEEA0057CB23 /* Home */,
 				4DD7DF172503B6A20088BD8D /* Base */,
@@ -312,6 +323,15 @@
 			path = Script;
 			sourceTree = "<group>";
 		};
+		4DF6BFD3250E3BD900E76329 /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				4DF6BFD4250E3BEF00E76329 /* LearnViewController.swift */,
+				4DF6BFD5250E3BEF00E76329 /* LearnViewController.xib */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
 		877ADC78A516DE01905B922D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +408,7 @@
 				4D9DDBB42504997C0057CB23 /* UserTopTableViewCell.xib in Resources */,
 				4D9DDB9C2503EF0A0057CB23 /* HomeViewController.xib in Resources */,
 				4D9DDBA92504968C0057CB23 /* SignInViewController.xib in Resources */,
+				4DF6BFD7250E3BEF00E76329 /* LearnViewController.xib in Resources */,
 				4DD7DF042503B16D0088BD8D /* Assets.xcassets in Resources */,
 				4D05EBBE250B5836001F79F8 /* GoogleService-Info.plist in Resources */,
 				4D9DDBAD250496990057CB23 /* SignUpViewController.xib in Resources */,
@@ -466,9 +487,11 @@
 				4DD7DF192503B7380088BD8D /* MainTabBarController.swift in Sources */,
 				4D9DDBB925049F140057CB23 /* UICollectionViewController+Extension.swift in Sources */,
 				4D9DDB9F2503EF640057CB23 /* UserViewController.swift in Sources */,
+				4DF6BFDB250E410A00E76329 /* LoadingHud.swift in Sources */,
 				4DA1FBA7250D211200C73D21 /* AppKey.swift in Sources */,
 				4DD7DF2F2503DA200088BD8D /* Localizable.swift in Sources */,
 				4D9DDBC02504D9DB0057CB23 /* UIAlertViewController+Extension.swift in Sources */,
+				4DF6BFD9250E409E00E76329 /* DeviceInfo.swift in Sources */,
 				4D9DDBBA25049F140057CB23 /* UITableViewController+Extension.swift in Sources */,
 				4D9DDBBE2504A48C0057CB23 /* UIViewController+Extension.swift in Sources */,
 				4D9DDBAF250496DE0057CB23 /* BaseViewController.swift in Sources */,
@@ -482,6 +505,7 @@
 				4DA1FB7D250CD99E00C73D21 /* Api.swift in Sources */,
 				4DA1FBA6250D211200C73D21 /* AppColor.swift in Sources */,
 				4DD7DEFB2503B16A0088BD8D /* AppDelegate.swift in Sources */,
+				4DF6BFD6250E3BEF00E76329 /* LearnViewController.swift in Sources */,
 				4D9DDBAC250496990057CB23 /* SignUpViewController.swift in Sources */,
 				4D9DDBBC2504A0BB0057CB23 /* UIImageView+Extension.swift in Sources */,
 				4DA1FB9B250D200300C73D21 /* DataLocal.swift in Sources */,
@@ -652,7 +676,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tan.nd164.E-CommercialApp";
+				PRODUCT_BUNDLE_IDENTIFIER = tan.nd164.FlashCardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -674,7 +698,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tan.nd164.E-CommercialApp";
+				PRODUCT_BUNDLE_IDENTIFIER = tan.nd164.FlashCardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

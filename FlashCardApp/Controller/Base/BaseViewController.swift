@@ -11,17 +11,31 @@ import UIKit
 class BaseViewController: UIViewController {
     
     let backButton = UIButton(type: .custom)
+    var isClearNavigationBar = false
+    var isHiddenNavBar = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addBackBarButton()
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
     
     deinit {
         navigationController?.delegate = nil
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
-     }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        if isClearNavigationBar {
+            clearNavigationBar()
+        } else {
+            navigationController?.navigationBar.shadowImage = UIColor.grayBackground?.image()
+            navigationController?.navigationBar.setBackgroundImage(UIColor.grayBackground?.image(), for: .default)
+            navigationController?.navigationBar.isTranslucent = false
+        }
+        navigationController?.setNavigationBarHidden(isHiddenNavBar, animated: true)
+    }
     
     func addBackBarButton() {
         if let nav = navigationController, nav.viewControllers.count > 1 {
@@ -55,6 +69,32 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.backgroundColor = UIColor.clear
+    }
+    
+    // MARK: - Create fake navigation bar
+    
+    let navItem = UINavigationItem(title: "")
+    
+    var statusView = UIView(frame: CGRect(x: 0,
+                                          y: 0,
+                                          width: DeviceInfo.width,
+                                          height: DeviceInfo.statusBarHeight))
+    
+    var fakeNavBar = UINavigationBar(frame: CGRect(x: 0,
+                                                   y: DeviceInfo.statusBarHeight,
+                                                   width: DeviceInfo.width,
+                                                   height: 44))
+    
+    func addFakeNavigationBar() {
+        
+        statusView.backgroundColor = UIColor.grayBackground
+        fakeNavBar.setItems([navItem], animated: false)
+        fakeNavBar.shadowImage = UIColor.grayBackground?.image()
+        fakeNavBar.setBackgroundImage(UIImage(),
+                                      for: .default)
+        fakeNavBar.backgroundColor = UIColor.grayBackground
+        view.addSubview(fakeNavBar)
+        view.addSubview(statusView)
     }
 }
 

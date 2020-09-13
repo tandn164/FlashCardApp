@@ -6,5 +6,6 @@
   Copyright © 2020 Nguyễn Đức Tân. All rights reserved.
 */
 
-"tabHome" = "ホーム";
-"tabUser" = "ユーザー";
+"tabHome" = "Home";
+"tabUser" = "User";
+"tabLearn" = "Learning";

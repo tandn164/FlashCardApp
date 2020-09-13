@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "literature-25-2.png",
+      "filename" : "paper-25-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "literature-50-2.png",
+      "filename" : "paper-50-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "literature-75-2.png",
+      "filename" : "paper-75-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

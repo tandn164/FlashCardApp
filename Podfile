@@ -9,4 +9,6 @@ target 'FlashCardApp' do
   pod 'SwiftGen'
   pod 'FBSDKLoginKit'
   pod 'Alamofire'
+  pod 'lottie-ios'
+
 end

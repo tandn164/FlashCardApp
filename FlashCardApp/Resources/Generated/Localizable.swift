@@ -10,6 +10,8 @@ import Foundation
 internal enum Localizable {
   /// ホーム
   internal static let tabHome = Localizable.tr("Localizable", "tabHome")
+  /// ラーニング
+  internal static let tabLearn = Localizable.tr("Localizable", "tabLearn")
   /// ユーザー
   internal static let tabUser = Localizable.tr("Localizable", "tabUser")
 }

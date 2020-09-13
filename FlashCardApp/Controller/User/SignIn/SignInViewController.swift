@@ -17,8 +17,8 @@ class SignInViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        isHiddenNavBar = true
         functionView.layer.cornerRadius = 20
-        navigationController?.setNavigationBarHidden(true, animated: false)
         setGesture()
     }
 }
