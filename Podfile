@@ -9,4 +9,7 @@ target 'FlashCardApp' do
   pod 'SwiftGen'
   pod 'FBSDKLoginKit'
   pod 'Alamofire'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Kingfisher', '~> 5.0'
 end

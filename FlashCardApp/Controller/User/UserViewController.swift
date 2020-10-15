@@ -62,11 +62,15 @@ extension UserViewController: UITableViewDelegate, UITableViewDataSource {
 extension UserViewController: UserTopTableViewCellDelegate {
     
     func signInPressed() {
-        presentView(SignInViewController())
+        let signInViewController = SignInViewController()
+        signInViewController.delegate = self
+        presentView(signInViewController)
     }
     
     func signUpPressed() {
-        presentView(SignUpViewController())
+        let signUpViewController = SignUpViewController()
+        signUpViewController.delegate = self
+        presentView(signUpViewController)
     }
     
     func presentView(_ viewController: BaseViewController) {
@@ -75,5 +79,14 @@ extension UserViewController: UserTopTableViewCellDelegate {
         navi.modalPresentationStyle = .overFullScreen
         navi.modalTransitionStyle = .crossDissolve
         present(navi, animated: true)
+    }
+}
+
+extension UserViewController: SignInDelegate, SignUpDelegate {
+    func didSignIn() {
+        tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .none)
+    }
+    
+    func didSignUp() {
     }
 }

@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>515569268975-5id6hbm18hptd59oe9jtge50ag0fg69q.apps.googleusercontent.com</string>
+	<string>635798969664-039kbj94nqv8j1p3rnuja296d803npp9.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.515569268975-5id6hbm18hptd59oe9jtge50ag0fg69q</string>
+	<string>com.googleusercontent.apps.635798969664-039kbj94nqv8j1p3rnuja296d803npp9</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCtnaQuUBdMPZ95ONIlznMbIFrPyxtHo0g</string>
+	<string>AIzaSyAFeY04t_FF_aNq5c5_DqMN99rfDS0NeCI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>515569268975</string>
+	<string>635798969664</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>tan.nd164.E-CommercialApp</string>
+	<string>tan.nd164.FlashCard-App</string>
 	<key>PROJECT_ID</key>
-	<string>e-commercial-app-7f038</string>
+	<string>flashcardapp-d3306</string>
 	<key>STORAGE_BUCKET</key>
-	<string>e-commercial-app-7f038.appspot.com</string>
+	<string>flashcardapp-d3306.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:515569268975:ios:5e43bc1bb7d1e158e4c31a</string>
+	<string>1:635798969664:ios:8267f17c1fe0b91a67eea5</string>
 	<key>DATABASE_URL</key>
-	<string>https://e-commercial-app-7f038.firebaseio.com</string>
+	<string>https://flashcardapp-d3306.firebaseio.com</string>
 </dict>
 </plist>

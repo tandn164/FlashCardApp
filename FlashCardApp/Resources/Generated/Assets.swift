@@ -17,6 +17,8 @@ internal extension UIImage {
   static let maleUserDefault = UIImage(named: "maleUserDefault")
   static let tabHomeOff = UIImage(named: "tabHomeOff")
   static let tabHomeOn = UIImage(named: "tabHomeOn")
+  static let tabLearnOff = UIImage(named: "tabLearnOff")
+  static let tabLearnOn = UIImage(named: "tabLearnOn")
   static let tabUserOff = UIImage(named: "tabUserOff")
   static let tabUserOn = UIImage(named: "tabUserOn")
   static let unknownUserDefault = UIImage(named: "unknownUserDefault")
