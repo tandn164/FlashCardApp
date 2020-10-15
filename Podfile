@@ -12,4 +12,6 @@ target 'FlashCardApp' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Kingfisher', '~> 5.0'
+  pod 'TwitterKit5'
+
 end

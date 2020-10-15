@@ -86,6 +86,9 @@ PODS:
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.10)
   - SwiftGen (6.3.0)
+  - TwitterCore (3.2.0)
+  - TwitterKit5 (5.2.0):
+    - TwitterCore (>= 3.1.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -94,6 +97,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Kingfisher (~> 5.0)
   - SwiftGen
+  - TwitterKit5
 
 SPEC REPOS:
   trunk:
@@ -114,6 +118,8 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - SwiftGen
+    - TwitterCore
+    - TwitterKit5
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
@@ -133,7 +139,9 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   SwiftGen: 3d5024a47ea79e408cded20763d7a17d18a4548c
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit5: 64095dfefcf39be2355711ef27112d55e340d90e
 
-PODFILE CHECKSUM: eb8a84fd6e8696e4d5427a86c6e6d6ba9ff0f760
+PODFILE CHECKSUM: bfac5dadeefb3e7824a9f48ac6dd6ad5418bc1eb
 
 COCOAPODS: 1.9.3

@@ -339,6 +339,7 @@
 				4DD7DEF52503B16A0088BD8D /* Resources */,
 				4D9DDB962503ED870057CB23 /* SwiftGen */,
 				0CDD6917F81576F7241F6DBA /* [CP] Embed Pods Frameworks */,
+				093A315F052F41C8FAF6DB98 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -404,6 +405,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		093A315F052F41C8FAF6DB98 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashCardApp/Pods-FlashCardApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashCardApp/Pods-FlashCardApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashCardApp/Pods-FlashCardApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0CDD6917F81576F7241F6DBA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
