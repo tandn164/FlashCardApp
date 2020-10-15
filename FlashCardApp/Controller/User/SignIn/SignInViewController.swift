@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKLoginKit
 import FirebaseAuth
+import TwitterKit
 
 protocol SignInDelegate: class {
     func didSignIn()
@@ -125,7 +126,41 @@ extension SignInViewController {
     }
     
     @objc func twitterLogin() {
+        TWTRTwitter.sharedInstance().logIn { [weak self] (session, error) in
+            guard let self = self else {
+                return
+            }
+            guard let session = session else {
+                if let error = error {
+                    if !error.localizedDescription.contains("cancel") {
+                        UIAlertController.showError(message: error.localizedDescription)
+                    }
+                } else {
+                    UIAlertController.showError(message: "User canceled")
+                }
+                return
+            }
+            print(session.authToken)
+            print(session.authTokenSecret)
+            
+            let credential = TwitterAuthProvider.credential(withToken: session.authToken,
+                                                            secret: session.authTokenSecret)
+            LoadingHud.show()
         
+            Auth.auth().signIn(with: credential) { (result, error) in
+                if let error = error {
+                    UIAlertController.showError(message: error.localizedDescription)
+                    LoadingHud.hide()
+                    return
+                } else {
+                    DataLocal.saveObject(session.userName, forKey: AppKey.userName)
+                    self.dismiss(animated: true, completion: {
+                        LoadingHud.hide()
+                        self.delegate?.didSignIn()
+                    })
+                }
+            }
+        }
     }
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
@@ -141,6 +176,6 @@ extension SignInViewController {
     }
     
     @IBAction func signInPressed(_ sender: UIButton) {
-    
+        
     }
 }

@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import Firebase
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         creatMainTabBarWindow()
         FirebaseApp.configure()
+        Twitter.configure()
         return true
     }
     
@@ -40,14 +42,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UIApplication.shared.registerForRemoteNotifications()
         }
     }
-    
+
     func application( _ app: UIApplication,
                       open url: URL,
                       options: [UIApplication.OpenURLOptionsKey : Any] = [:] ) -> Bool {
-        ApplicationDelegate.shared.application( app,
-                                                open: url,
-                                                sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
-                                                annotation: options[UIApplication.OpenURLOptionsKey.annotation] )
+        
+        if TWTRTwitter.sharedInstance().application(app, open:url, options: options) {
+            return true
+        }
+        if url.scheme != nil && url.scheme!.hasPrefix("fb") && url.host ==  "authorize" {
+            let OURL = UIApplication.OpenURLOptionsKey.sourceApplication
+            ApplicationDelegate.shared.application( app,
+                                                    open: url,
+                                                    sourceApplication:options[OURL] as? String,
+                                                    annotation: options[UIApplication.OpenURLOptionsKey.annotation] )
+            return true
+        }
+        return false
     }
 }
 
