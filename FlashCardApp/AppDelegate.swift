@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKCoreKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         creatMainTabBarWindow()
+        FirebaseApp.configure()
         return true
     }
     

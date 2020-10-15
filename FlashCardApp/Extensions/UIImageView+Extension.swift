@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 extension UIImageView {
     
@@ -15,5 +16,15 @@ extension UIImageView {
         let tintedImage = origImage?.withRenderingMode(.alwaysTemplate)
         image = tintedImage
         tintColor = color
+    }
+    
+    func loadImage(_ imageString: String?, placeholder: UIImage? = nil, completion: (() -> Void)? = nil) {
+        guard let url = imageString?.toUrl else { return }
+        self.kf.setImage(with: url,
+                         placeholder: placeholder,
+                         options: nil,
+                         progressBlock: nil) { (result) in
+                            completion?()
+        }
     }
 }
