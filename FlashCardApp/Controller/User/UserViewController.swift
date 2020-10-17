@@ -7,6 +7,77 @@
 //
 
 import UIKit
+import FirebaseAuth
+
+enum UserViewCellType: Int {
+    
+    case header = 0
+    case emptyView
+    case footerBlank
+    case function
+    case logout
+    
+    init(index: Int) {
+        switch index {
+        case 0:
+            self = .header
+        case 1:
+            if ((DataLocal.getObject(AppKey.accountType) as? Int ?? 0) == 3 &&
+                Auth.auth().currentUser?.isEmailVerified != true) ||
+                (Auth.auth().currentUser == nil) {
+                self = .emptyView
+            } else  {
+                self = .function
+            }
+        case 2:
+            if ((DataLocal.getObject(AppKey.accountType) as? Int ?? 0) == 3 &&
+                Auth.auth().currentUser?.isEmailVerified != true) ||
+                (Auth.auth().currentUser == nil) { 
+                self = .logout
+            } else {
+                self = .footerBlank
+            }
+        case 3:
+            self = .logout
+        default:
+            self = .footerBlank
+        }
+    }
+    
+    var cellClass: UITableViewCell.Type {
+        switch self {
+        case .emptyView:
+            return EmptyUserTableViewCell.self
+        case .footerBlank:
+            return UITableViewCell.self
+        case .header:
+            return UserTopTableViewCell.self
+        case .logout:
+            return SignOutTableViewCell.self
+        case .function:
+            return UITableViewCell.self
+        }
+    }
+    
+    var height: CGFloat {
+        switch self {
+        case .emptyView:
+            if Auth.auth().currentUser?.isEmailVerified == false {
+                return DeviceInfo.height - DeviceInfo.statusBarHeight*2 - 44 - 138 - 46
+            } else {
+                return DeviceInfo.height - DeviceInfo.statusBarHeight*2 - 44 - 138
+            }
+        case .header:
+            return 138 + DeviceInfo.statusBarHeight
+        case .function:
+            return UITableViewCell().bounds.height
+        case .footerBlank:
+            return DeviceInfo.height - DeviceInfo.statusBarHeight*2 - 44 - 138 - UITableViewCell().bounds.height * 2
+        case .logout:
+            return 46
+        }
+    }
+}
 
 class UserViewController: BaseViewController {
 
@@ -20,6 +91,16 @@ class UserViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
+        if let user = Auth.auth().currentUser {
+            user.reload {[weak self] (error) in
+                if let error = error {
+                    UIAlertController.showError(message: error.localizedDescription)
+                }
+                self?.tableView.reloadData()
+            }
+        } else {
+            tableView.reloadData()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -34,24 +115,58 @@ extension UserViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerCellByNib(UserTopTableViewCell.self)
+        tableView.registerCellByNib(SignOutTableViewCell.self)
+        tableView.registerCell(EmptyUserTableViewCell.self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if Auth.auth().currentUser == nil {
+            tableView.isScrollEnabled = false
+            return 2
+        } else if (DataLocal.getObject(AppKey.accountType) as? Int ?? 0) == 3 &&
+                    Auth.auth().currentUser?.isEmailVerified != true {
+            tableView.isScrollEnabled = false
+            return 3
+        } else {
+            tableView.isScrollEnabled = true
+            return 4
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 138
+        let cellType = UserViewCellType(index: indexPath.row)
+        return cellType.height
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueCell(UserTopTableViewCell.self, forIndexPath: indexPath) else {
-            return UITableViewCell()
+        let cellType = UserViewCellType(index: indexPath.row)
+        switch cellType {
+        case .header:
+            guard let cell = tableView.dequeueCell(cellType.cellClass,
+                                                   forIndexPath: indexPath) as? UserTopTableViewCell else {
+                return UITableViewCell()
+            }
+            cell.delegate = self
+            return cell
+        case .emptyView:
+            guard let cell = tableView.dequeueCell(cellType.cellClass,
+                                                   forIndexPath: indexPath) as? EmptyUserTableViewCell else {
+                return UITableViewCell()
+            }
+            return cell
+        case .logout:
+            guard let cell = tableView.dequeueCell(cellType.cellClass,
+                                                   forIndexPath: indexPath) as? SignOutTableViewCell else {
+                return UITableViewCell()
+            }
+            cell.delegate = self
+            return cell
+        default:
+            let cell = UITableViewCell()
+            cell.selectionStyle = .none
+            return cell
         }
-        cell.delegate = self
-        
-        return cell
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -82,11 +197,18 @@ extension UserViewController: UserTopTableViewCellDelegate {
     }
 }
 
-extension UserViewController: SignInDelegate, SignUpDelegate {
+extension UserViewController: SignInDelegate, SignUpDelegate, SignOutDelegate {
     func didSignIn() {
-        tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .none)
+        tableView.reloadData()
     }
     
     func didSignUp() {
+        if Auth.auth().currentUser != nil {
+            tableView.reloadData()
+        }
+    }
+    
+    func didSignOut() {
+        tableView.reloadData()
     }
 }

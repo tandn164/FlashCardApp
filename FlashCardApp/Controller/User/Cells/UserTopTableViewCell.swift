@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 protocol UserTopTableViewCellDelegate: class {
     func signInPressed()
@@ -21,25 +22,34 @@ class UserTopTableViewCell: UITableViewCell {
     @IBOutlet weak var userNameLabel: UILabel!
     
     weak var delegate: UserTopTableViewCellDelegate?
+    let cellHeight: CGFloat = 138
     
     override func awakeFromNib() {
         super.awakeFromNib()
         userAvatarImageView.layer.cornerRadius = userAvatarImageView.frame.height / 2
-        if let userName = DataLocal.getObject(AppKey.userName) as? String {
+        setupView()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        setupView()
+    }
+
+    func setupView() {
+        if let user = Auth.auth().currentUser {
             userNameLabel.isHidden = false
-            userNameLabel.text = userName
-            if let url = DataLocal.getObject(AppKey.userImageURL) as? String {
-                userAvatarImageView.loadImage(url)
+            if user.displayName != nil {
+                userNameLabel.text = user.displayName
+            } else if user.email != nil {
+                userNameLabel.text = user.email?.subStringByString("@")
             } else {
-                if let gender = DataLocal.getObject(AppKey.userGender) as? String {
-                    if gender == "male" {
-                        userAvatarImageView.renderImage("maleUserDefault", .primaryColor)
-                    } else {
-                        userAvatarImageView.renderImage("femaleUserDefault", .primaryColor)
-                    }
-                } else {
-                    userAvatarImageView.renderImage("unknownUserDefault", .primaryColor)
-                }
+                userNameLabel.text = "Anonymous"
+            }
+            if let url = user.photoURL {
+                let urlString = url.absoluteString
+                userAvatarImageView.loadImage(urlString)
+            } else {
+                userAvatarImageView.renderImage("unknownUserDefault", .primaryColor)
             }
             signInButton.isHidden = true
             signUpButton.isHidden = true

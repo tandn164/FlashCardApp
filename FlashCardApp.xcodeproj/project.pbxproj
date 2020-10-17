@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D05C5D4253AEF4200FEF150 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D05C5D2253AEF4200FEF150 /* ForgotPasswordViewController.swift */; };
+		4D05C5D5253AEF4200FEF150 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D05C5D3253AEF4200FEF150 /* ForgotPasswordViewController.xib */; };
+		4D2B999625393913005681CF /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B999525393913005681CF /* DeviceInfo.swift */; };
+		4D2B999B25395455005681CF /* SignOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B999925395454005681CF /* SignOutTableViewCell.swift */; };
+		4D2B999C25395455005681CF /* SignOutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2B999A25395455005681CF /* SignOutTableViewCell.xib */; };
 		4D9DDB952503EC5F0057CB23 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDB942503EC5F0057CB23 /* UIColor+Extension.swift */; };
 		4D9DDB9B2503EF0A0057CB23 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDB992503EF0A0057CB23 /* HomeViewController.swift */; };
 		4D9DDB9C2503EF0A0057CB23 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9DDB9A2503EF0A0057CB23 /* HomeViewController.xib */; };
@@ -45,11 +50,17 @@
 		4DF9594B2538246800FD2D7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DF9594A2538246800FD2D7A /* GoogleService-Info.plist */; };
 		4DF959732538305700FD2D7A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF959722538305700FD2D7A /* String+Extension.swift */; };
 		4DF959762538354400FD2D7A /* LoadingHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF959752538354400FD2D7A /* LoadingHud.swift */; };
+		4DF959BA253935F100FD2D7A /* EmptyUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF959B8253935F100FD2D7A /* EmptyUserTableViewCell.swift */; };
 		8EA695C2091A669D00ED4A3E /* Pods_FlashCardApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6348F1B614DC0503671E94 /* Pods_FlashCardApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FD1B0A86225BCDAEBE4110E /* Pods-FlashCardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardApp.release.xcconfig"; path = "Target Support Files/Pods-FlashCardApp/Pods-FlashCardApp.release.xcconfig"; sourceTree = "<group>"; };
+		4D05C5D2253AEF4200FEF150 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		4D05C5D3253AEF4200FEF150 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		4D2B999525393913005681CF /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		4D2B999925395454005681CF /* SignOutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutTableViewCell.swift; sourceTree = "<group>"; };
+		4D2B999A25395455005681CF /* SignOutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignOutTableViewCell.xib; sourceTree = "<group>"; };
 		4D9DDB942503EC5F0057CB23 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4D9DDB992503EF0A0057CB23 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4D9DDB9A2503EF0A0057CB23 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -92,6 +103,7 @@
 		4DF9594A2538246800FD2D7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4DF959722538305700FD2D7A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		4DF959752538354400FD2D7A /* LoadingHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingHud.swift; sourceTree = "<group>"; };
+		4DF959B8253935F100FD2D7A /* EmptyUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyUserTableViewCell.swift; sourceTree = "<group>"; };
 		AE6348F1B614DC0503671E94 /* Pods_FlashCardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashCardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4806C4E1E75F8DF98C9E53 /* Pods-FlashCardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardApp.debug.xcconfig"; path = "Target Support Files/Pods-FlashCardApp/Pods-FlashCardApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +164,8 @@
 			children = (
 				4D9DDBA62504968C0057CB23 /* SignInViewController.swift */,
 				4D9DDBA72504968C0057CB23 /* SignInViewController.xib */,
+				4D05C5D2253AEF4200FEF150 /* ForgotPasswordViewController.swift */,
+				4D05C5D3253AEF4200FEF150 /* ForgotPasswordViewController.xib */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -161,6 +175,8 @@
 			children = (
 				4D9DDBB12504997C0057CB23 /* UserTopTableViewCell.swift */,
 				4D9DDBB22504997C0057CB23 /* UserTopTableViewCell.xib */,
+				4D2B999925395454005681CF /* SignOutTableViewCell.swift */,
+				4D2B999A25395455005681CF /* SignOutTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -180,6 +196,7 @@
 				4DA1FB97250D200300C73D21 /* AccountManager.swift */,
 				4DA1FB98250D200300C73D21 /* DataLocal.swift */,
 				4DF959752538354400FD2D7A /* LoadingHud.swift */,
+				4D2B999525393913005681CF /* DeviceInfo.swift */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -259,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				4D9DDBB525049DF70057CB23 /* RoundButton.swift */,
+				4DF959B8253935F100FD2D7A /* EmptyUserTableViewCell.swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -389,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D05C5D5253AEF4200FEF150 /* ForgotPasswordViewController.xib in Resources */,
 				4DD7DF072503B16D0088BD8D /* LaunchScreen.storyboard in Resources */,
 				4D9DDBA02503EF640057CB23 /* UserViewController.xib in Resources */,
 				4DD7DF212503D3C90088BD8D /* Localizable.strings in Resources */,
@@ -399,6 +418,7 @@
 				4DF9594B2538246800FD2D7A /* GoogleService-Info.plist in Resources */,
 				4D9DDBAD250496990057CB23 /* SignUpViewController.xib in Resources */,
 				4DD7DF022503B16A0088BD8D /* Main.storyboard in Resources */,
+				4D2B999C25395455005681CF /* SignOutTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D05C5D4253AEF4200FEF150 /* ForgotPasswordViewController.swift in Sources */,
 				4D9DDBB625049DF70057CB23 /* RoundButton.swift in Sources */,
 				4DD7DF192503B7380088BD8D /* MainTabBarController.swift in Sources */,
 				4DF959762538354400FD2D7A /* LoadingHud.swift in Sources */,
@@ -495,6 +516,7 @@
 				4DD7DF2F2503DA200088BD8D /* Localizable.swift in Sources */,
 				4D9DDBC02504D9DB0057CB23 /* UIAlertViewController+Extension.swift in Sources */,
 				4D9DDBBA25049F140057CB23 /* UITableViewController+Extension.swift in Sources */,
+				4D2B999625393913005681CF /* DeviceInfo.swift in Sources */,
 				4D9DDBBE2504A48C0057CB23 /* UIViewController+Extension.swift in Sources */,
 				4D9DDBAF250496DE0057CB23 /* BaseViewController.swift in Sources */,
 				4DA1FB8E250D1F5D00C73D21 /* Result.swift in Sources */,
@@ -504,8 +526,10 @@
 				4D9DDBA32503EFBA0057CB23 /* BaseNavigationController.swift in Sources */,
 				4D9DDBA82504968C0057CB23 /* SignInViewController.swift in Sources */,
 				4DD7DF302503DA200088BD8D /* Assets.swift in Sources */,
+				4D2B999B25395455005681CF /* SignOutTableViewCell.swift in Sources */,
 				4DA1FB7D250CD99E00C73D21 /* Api.swift in Sources */,
 				4DA1FBA6250D211200C73D21 /* AppColor.swift in Sources */,
+				4DF959BA253935F100FD2D7A /* EmptyUserTableViewCell.swift in Sources */,
 				4DF959732538305700FD2D7A /* String+Extension.swift in Sources */,
 				4DD7DEFB2503B16A0088BD8D /* AppDelegate.swift in Sources */,
 				4D9DDBAC250496990057CB23 /* SignUpViewController.swift in Sources */,

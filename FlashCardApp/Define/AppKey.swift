@@ -11,6 +11,8 @@ import Foundation
 struct AppKey {
     static let token = "token"
     static let userName = "userName"
+    static let userID = "userID"
     static let userImageURL = "userImageURL"
     static let userGender = "userGender"
+    static let accountType = "accountType"
 }
