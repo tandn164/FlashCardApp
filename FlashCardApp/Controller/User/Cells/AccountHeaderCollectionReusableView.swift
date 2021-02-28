@@ -1,28 +1,27 @@
 //
-//  UserTopTableViewCell.swift
+//  AccountHeaderCollectionReusableView.swift
 //  FlashCardApp
 //
-//  Created by Nguyễn Đức Tân on 9/6/20.
-//  Copyright © 2020 Nguyễn Đức Tân. All rights reserved.
+//  Created by Nguyễn Đức Tân on 27/02/2021.
+//  Copyright © 2021 Nguyễn Đức Tân. All rights reserved.
 //
 
 import UIKit
 import FirebaseAuth
 
-protocol UserTopTableViewCellDelegate: class {
+protocol AccountHeaderDelegate: class {
     func signInPressed()
     func signUpPressed()
 }
 
-class UserTopTableViewCell: UITableViewCell {
+class AccountHeaderCollectionReusableView: UICollectionReusableView {
 
     @IBOutlet weak var userAvatarImageView: UIImageView!
     @IBOutlet weak var signInButton: RoundButton!
     @IBOutlet weak var signUpButton: RoundButton!
     @IBOutlet weak var userNameLabel: UILabel!
     
-    weak var delegate: UserTopTableViewCellDelegate?
-    let cellHeight: CGFloat = 138
+    weak var delegate: AccountHeaderDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,7 +36,6 @@ class UserTopTableViewCell: UITableViewCell {
 
     func setupView() {
         if let user = Auth.auth().currentUser {
-            userNameLabel.isHidden = false
             if user.displayName != nil {
                 userNameLabel.text = user.displayName
             } else if user.email != nil {
@@ -53,6 +51,7 @@ class UserTopTableViewCell: UITableViewCell {
             }
             signInButton.isHidden = true
             signUpButton.isHidden = true
+            userNameLabel.isHidden = false
         } else {
             userAvatarImageView.renderImage("unknownUserDefault", .primaryColor)
             signInButton.isHidden = false

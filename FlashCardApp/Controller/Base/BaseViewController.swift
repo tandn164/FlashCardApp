@@ -10,36 +10,27 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
-    let backButton = UIButton(type: .custom)
+    @IBOutlet weak var appHeader: HomeHeaderView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addBackBarButton()
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        setAction()
     }
     
-    deinit {
-        navigationController?.delegate = nil
-        navigationController?.interactivePopGestureRecognizer?.delegate = nil
-     }
-    
-    func addBackBarButton() {
-        if let nav = navigationController, nav.viewControllers.count > 1 {
-            backButton.setImage(.icBack, for: .normal)
-            backButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -24, bottom: 0, right: 0)
-            backButton.addTarget(self, action: #selector(onBack), for: .touchUpInside)
-            navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+    public func setTitleHeader(title: String) {
+        if(appHeader != nil) {
+            appHeader.title.text = title
+            appHeader.listView.delegate = self
         }
     }
     
-    func addCloseBarButton(_ tintColor: UIColor = .black) {
-        if presentingViewController != nil {
-            let closeButton = UIButton(type: .custom)
-            closeButton.setImage(.icClose, for: .normal)
-            closeButton.addTarget(self, action: #selector(onClose), for: .touchUpInside)
-            closeButton.tintColor = tintColor
-            navigationItem.rightBarButtonItem = UIBarButtonItem(customView: closeButton)
+    private func setAction() {
+        guard appHeader != nil else {
+            return
         }
+        appHeader.homeView.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                                       action: #selector(showRootViewController)))
+        
     }
     
     @objc func onBack() {
@@ -50,13 +41,11 @@ class BaseViewController: UIViewController {
         dismiss(animated: true)
     }
     
-    func clearNavigationBar() {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.backgroundColor = UIColor.clear
+    @objc func showRootViewController() {
+        
     }
 }
+
 
 extension BaseViewController: UIGestureRecognizerDelegate {
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
@@ -64,3 +53,18 @@ extension BaseViewController: UIGestureRecognizerDelegate {
     }
 }
 
+extension BaseViewController: MenuViewDelegate {
+    func logout() {
+        logoutUser()
+    }
+    
+    func editProfile() {
+        editProfileUser()
+    }
+    
+    @objc func logoutUser() {
+    }
+    
+    @objc func editProfileUser() {
+    }
+}

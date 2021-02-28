@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="MenuItemTableViewCell" customModule="FlashCardApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pdb-A0-yqw">
+                        <rect key="frame" x="20" y="11" width="15" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="C2t-be-DWv"/>
+                            <constraint firstAttribute="width" constant="15" id="KSb-2a-bDg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vE-vQ-MGa">
+                        <rect key="frame" x="50" y="13.5" width="250" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" name="blackColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pdb-A0-yqw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Rdx-yA-FWn"/>
+                    <constraint firstAttribute="trailing" secondItem="2vE-vQ-MGa" secondAttribute="trailing" constant="20" id="Vo6-N6-jVL"/>
+                    <constraint firstItem="2vE-vQ-MGa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eZ9-JQ-qkf"/>
+                    <constraint firstItem="Pdb-A0-yqw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hfW-mH-rcG"/>
+                    <constraint firstItem="2vE-vQ-MGa" firstAttribute="leading" secondItem="Pdb-A0-yqw" secondAttribute="trailing" constant="15" id="rcy-u2-X3X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconImageView" destination="Pdb-A0-yqw" id="Yln-uk-Z7t"/>
+                <outlet property="titleLabel" destination="2vE-vQ-MGa" id="gPR-BS-GJk"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="61.607142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="blackColor">
+            <color red="0.1890590489" green="0.21826744079999999" blue="0.2941267192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

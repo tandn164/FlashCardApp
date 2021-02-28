@@ -22,22 +22,23 @@ class ForgotPasswordViewController: BaseViewController {
         setupTextField()
         setGesture()
     }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     @IBAction func sendPressed(_ sender: UIButton) {
         guard checkEdited(),
               let email = emailTextField.text else {
             return
         }
         view.endEditing(true)
-        LoadingHud.show()
-        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
-            LoadingHud.hide()
-            if let error = error {
-                UIAlertController.showError(message: error.localizedDescription)
-                return
+        AuthService.instance.resetPassword(email: email) { (result) in
+            if result {
+                self.dismiss(animated: true, completion: {
+                    UIAlertController.showAlert(message: Localizable.checkResetPassword)
+                })
             }
-            self.dismiss(animated: true, completion: {
-                UIAlertController.showError(message: Localizable.checkResetPassword, tittle: "")
-            })
         }
     }
     
@@ -48,9 +49,13 @@ class ForgotPasswordViewController: BaseViewController {
     }
     
     @objc func dismissView() {
-        self.dismiss(animated: true, completion: nil)
+        if emailTextField.isEditing {
+            view.endEditing(true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
-    
+        
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if touch.view?.isDescendant(of: functionView) == true {
             return false

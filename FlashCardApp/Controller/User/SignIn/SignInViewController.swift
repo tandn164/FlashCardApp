@@ -34,6 +34,11 @@ class SignInViewController: BaseViewController {
         setGesture()
         setupTextField()
     }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        view.endEditing(true)
+    }
 }
 
 extension SignInViewController {
@@ -52,7 +57,15 @@ extension SignInViewController {
     }
     
     @objc func dismissView() {
-        self.dismiss(animated: true, completion: nil)
+        if checkEdited() {
+            view.endEditing(true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func checkEditing() -> Bool {
+        return emailTextField.isEditing || passwordTextField.isEditing
     }
     
     @objc func facebookLogin() {
@@ -74,18 +87,11 @@ extension SignInViewController {
                 guard let token = AccessToken.current, !token.isExpired else {
                     return
                 }
-                LoadingHud.show()
-                print(token.tokenString)
-                // Connect to firebase auth
+                // Connect to firFebase auth
                 let credential = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
-                Auth.auth().signIn(with: credential) { (result, error) in
-                    if let error = error {
-                        UIAlertController.showError(message: error.localizedDescription)
-                        LoadingHud.hide()
-                        return
-                    } else {
+                AuthService.instance.login(credential: credential) { (success) in
+                    if success {
                         self.dismiss(animated: true, completion: {
-                            LoadingHud.hide()
                             DataLocal.saveObject(1, forKey: AppKey.accountType)
                             self.delegate?.didSignIn()
                         })
@@ -106,25 +112,16 @@ extension SignInViewController {
                         UIAlertController.showError(message: error.localizedDescription)
                     }
                 } else {
-                    UIAlertController.showError(message: Localizable.userCanceled, tittle: "")
+                    UIAlertController.showAlert(message: Localizable.userCanceled)
                 }
                 return
             }
-            print(session.authToken)
-            print(session.authTokenSecret)
             
             let credential = TwitterAuthProvider.credential(withToken: session.authToken,
                                                             secret: session.authTokenSecret)
-            LoadingHud.show()
-            
-            Auth.auth().signIn(with: credential) { (result, error) in
-                if let error = error {
-                    UIAlertController.showError(message: error.localizedDescription)
-                    LoadingHud.hide()
-                    return
-                } else {
+            AuthService.instance.login(credential: credential) { (success) in
+                if success {
                     self.dismiss(animated: true, completion: {
-                        LoadingHud.hide()
                         DataLocal.saveObject(2, forKey: AppKey.accountType)
                         self.delegate?.didSignIn()
                     })
@@ -155,19 +152,12 @@ extension SignInViewController {
         }
         view.endEditing(true)
         LoadingHud.show()
-        Auth.auth().signIn(withEmail: mail, password: password) {[weak self] (result, error) in
-            LoadingHud.hide()
-            if let error = error {
-                UIAlertController.showError(message: error.localizedDescription)
-                return
-            }
-            guard let self = self,
-                  let _ = result else {
-                return
-            }
-            self.dismiss(animated: true) {
-                DataLocal.saveObject(3, forKey: AppKey.accountType)
-                self.delegate?.didSignIn()
+        AuthService.instance.login(email: mail, password: password) {[weak self] (success) in
+            if success {
+                self?.dismiss(animated: true) {
+                    DataLocal.saveObject(3, forKey: AppKey.accountType)
+                    self?.delegate?.didSignIn()
+                }
             }
         }
     }

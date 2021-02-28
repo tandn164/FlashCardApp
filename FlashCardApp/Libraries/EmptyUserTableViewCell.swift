@@ -66,7 +66,7 @@ class EmptyUserTableViewCell: UITableViewCell {
                 return
             }
             LoadingHud.hide()
-            UIAlertController.showError(message: Localizable.checkVerifyMail, tittle: "")
+            UIAlertController.showAlert(message: Localizable.checkVerifyMail)
         }
     }
     

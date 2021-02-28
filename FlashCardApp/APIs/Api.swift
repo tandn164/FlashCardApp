@@ -88,7 +88,7 @@ extension API {
             case let .success(data):
                 success(data)
             case let .failure(error):
-                UIAlertController.showError(message: error.localizedDescription, tittle: "")
+                UIAlertController.showError(message: error.localizedDescription)
             }
         }
     }

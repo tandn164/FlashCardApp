@@ -6,8 +6,8 @@
   Copyright © 2020 Nguyễn Đức Tân. All rights reserved.
 */
 
-"tabHome" = "ホーム";
-"tabUser" = "ユーザー";
+"tabHome" = "Home";
+"tabUser" = "My Profile";
 "Warning email" = "Please enter your email";
 "Warning password" = "Please enter your password";
 "Check verify mail" = "Please check your email to verify your account";

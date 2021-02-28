@@ -81,6 +81,23 @@ extension String {
         return String(format: "%d月%d日 配信",
                       dateComponents.month ?? 0, dateComponents.day ?? 0)
     }
+    
+    public var localized: String {
+        let currentLocale = AppPreferences.instance.language
+        guard
+            let bundlePath = Bundle.main.path(forResource: currentLocale, ofType: "lproj"),
+            let bundle = Bundle(path: bundlePath) else {
+            return self
+        }
+        return NSLocalizedString(self, tableName: nil, bundle: bundle, value: "", comment: "")    }
+    
+    public var localizedLowercase: String {
+        return self.localized.lowercased()
+    }
+    
+    public var localizedUppercase: String {
+        return self.localized.uppercased()
+    }
 }
 
 extension Int {

@@ -35,6 +35,10 @@ class SignUpViewController: BaseViewController {
         setGesture()
     }
 
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        view.endEditing(true)
+    }
 }
 
 // Action
@@ -53,7 +57,15 @@ extension SignUpViewController {
     }
     
     @objc func dismissView() {
-        self.dismiss(animated: true, completion: nil)
+        if checkEditing() {
+            view.endEditing(true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func checkEditing() -> Bool {
+        return emailTexField.isEditing || passWordTextField.isEditing || confirmPassWordTextField.isEditing
     }
     
     @objc func facebookLogin() {
@@ -76,17 +88,11 @@ extension SignUpViewController {
                     return
                 }
                 LoadingHud.show()
-                print(token.tokenString)
                 // Connect to firebase auth
                 let credential = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
-                Auth.auth().signIn(with: credential) { (result, error) in
-                    if let error = error {
-                        UIAlertController.showError(message: error.localizedDescription)
-                        LoadingHud.hide()
-                        return
-                    } else {
+                AuthService.instance.login(credential: credential) { (success) in
+                    if success {
                         self.dismiss(animated: true, completion: {
-                            LoadingHud.hide()
                             DataLocal.saveObject(1, forKey: AppKey.accountType)
                             self.delegate?.didSignUp()
                         })
@@ -107,25 +113,16 @@ extension SignUpViewController {
                         UIAlertController.showError(message: error.localizedDescription)
                     }
                 } else {
-                    UIAlertController.showError(message: Localizable.userCanceled, tittle: "")
+                    UIAlertController.showAlert(message: Localizable.userCanceled)
                 }
                 return
             }
-            print(session.authToken)
-            print(session.authTokenSecret)
-            
+
             let credential = TwitterAuthProvider.credential(withToken: session.authToken,
                                                             secret: session.authTokenSecret)
-            LoadingHud.show()
-        
-            Auth.auth().signIn(with: credential) { (result, error) in
-                if let error = error {
-                    UIAlertController.showError(message: error.localizedDescription)
-                    LoadingHud.hide()
-                    return
-                } else {
+            AuthService.instance.login(credential: credential) { (success) in
+                if success {
                     self.dismiss(animated: true, completion: {
-                        LoadingHud.hide()
                         DataLocal.saveObject(2, forKey: AppKey.accountType)
                         self.delegate?.didSignUp()
                     })
@@ -153,49 +150,13 @@ extension SignUpViewController {
               let password = passWordTextField.text else {
             return
         }
-        LoadingHud.show()
-        auth.createUser(withEmail: mail,
-                        password: password) {[weak self] (result, error) in
-            if let error = error {
-                UIAlertController.showError(message: error.localizedDescription)
-                LoadingHud.hide()
-            } else {
-                self?.sendMail()
-            }
-        }
-    }
-    
-    func sendMail() {
-        guard let user = Auth.auth().currentUser else {
-            LoadingHud.hide()
-            return
-        }
-        user.reload { (error) in
-            if let error = error {
-                UIAlertController.showError(message: error.localizedDescription)
-                LoadingHud.hide()
-            }
-            switch user.isEmailVerified {
-            case true:
-                UIAlertController.showError(message: Localizable.emailExisted, tittle: "")
-                try! Auth.auth().signOut()
-                LoadingHud.hide()
-                return
-            case false:
-                user.sendEmailVerification { (error) in
-                    if let error = error {
-                        UIAlertController.showError(message: error.localizedDescription)
-                        try! Auth.auth().signOut()
-                        LoadingHud.hide()
-                    } else {
-                        self.dismiss(animated: true, completion: {
-                            LoadingHud.hide()
-                            DataLocal.saveObject(3, forKey: AppKey.accountType)
-                            UIAlertController.showError(message: Localizable.checkVerifyMail, tittle: "")
-                            self.delegate?.didSignUp()
-                        })
-                    }
-                }
+        AuthService.instance.register(email: mail, password: password) { (success) in
+            if success {
+                self.dismiss(animated: true, completion: {
+                    DataLocal.saveObject(3, forKey: AppKey.accountType)
+                    UIAlertController.showAlert(message: Localizable.checkVerifyMail)
+                    self.delegate?.didSignUp()
+                })
             }
         }
     }

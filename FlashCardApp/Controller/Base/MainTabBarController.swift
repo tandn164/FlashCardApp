@@ -10,13 +10,13 @@ import UIKit
 
 enum TabType {
     case home
-    case myPage
+    case dictionary
     
     var name: String {
         switch self {
         case .home:
             return Localizable.tabHome
-        case .myPage:
+        case .dictionary:
             return Localizable.tabUser
         }
     }
@@ -25,7 +25,7 @@ enum TabType {
         switch self {
         case .home:
             return .tabHomeOn
-        case .myPage:
+        case .dictionary:
             return .tabUserOn
         }
     }
@@ -34,7 +34,7 @@ enum TabType {
         switch self {
         case .home:
             return .tabHomeOff
-        case .myPage:
+        case .dictionary:
             return .tabUserOff
         }
     }
@@ -45,8 +45,8 @@ enum TabType {
         switch self {
         case .home:
             vc = HomeViewController()
-        case .myPage:
-            vc = UserViewController()
+        case .dictionary:
+            vc = DictionaryViewController()
         }
         
         vc.title = name
@@ -56,7 +56,7 @@ enum TabType {
 
 final class MainTabBarController: UITabBarController {
     
-    private let mainTabBars: [TabType] = [.home, .myPage]
+    private let mainTabBars: [TabType] = [.dictionary, .home]
 
     override func viewDidLoad() {
         super.viewDidLoad()

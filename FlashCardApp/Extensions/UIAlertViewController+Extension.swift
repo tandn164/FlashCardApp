@@ -16,6 +16,10 @@ extension UIAlertController {
         show(message: message, title: tittle)
     }
     
+    static func showAlert(message: String) {
+        show(message: message, title: "")
+    }
+    
     static private func show(message: String? = nil, title: String? = nil) {
         let alertController = UIAlertController(title: title,
                                                 message: message,
