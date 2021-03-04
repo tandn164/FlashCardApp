@@ -58,6 +58,20 @@
 		4DA1FBA6250D211200C73D21 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1FBA3250D211200C73D21 /* AppColor.swift */; };
 		4DA1FBA7250D211200C73D21 /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1FBA4250D211200C73D21 /* AppKey.swift */; };
 		4DA1FBA8250D211200C73D21 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1FBA5250D211200C73D21 /* AppConfig.swift */; };
+		4DA6899125F0C8D9001CCF26 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6898F25F0C8D9001CCF26 /* MyProfileViewController.swift */; };
+		4DA6899225F0C8D9001CCF26 /* MyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA6899025F0C8D9001CCF26 /* MyProfileViewController.xib */; };
+		4DA6899625F0C8F6001CCF26 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6899425F0C8F6001CCF26 /* EditProfileViewController.swift */; };
+		4DA6899725F0C8F6001CCF26 /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA6899525F0C8F6001CCF26 /* EditProfileViewController.xib */; };
+		4DA6899A25F0C933001CCF26 /* GenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6899925F0C933001CCF26 /* GenreModel.swift */; };
+		4DA6899D25F0C93E001CCF26 /* FlashCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6899C25F0C93E001CCF26 /* FlashCardModel.swift */; };
+		4DA689A225F0CDDA001CCF26 /* FlashCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA689A025F0CDDA001CCF26 /* FlashCardViewController.swift */; };
+		4DA689A325F0CDDA001CCF26 /* FlashCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA689A125F0CDDA001CCF26 /* FlashCardViewController.xib */; };
+		4DA689A925F0CE07001CCF26 /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA689A725F0CE07001CCF26 /* GenreViewController.swift */; };
+		4DA689AA25F0CE07001CCF26 /* GenreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA689A825F0CE07001CCF26 /* GenreViewController.xib */; };
+		4DA689AF25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA689AD25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.swift */; };
+		4DA689B025F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA689AE25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.xib */; };
+		4DCD7D1925F18ABF00405BEB /* FlashCardOverViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD7D1725F18ABF00405BEB /* FlashCardOverViewTableViewCell.swift */; };
+		4DCD7D1A25F18ABF00405BEB /* FlashCardOverViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD7D1825F18ABF00405BEB /* FlashCardOverViewTableViewCell.xib */; };
 		4DD7DEFB2503B16A0088BD8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7DEFA2503B16A0088BD8D /* AppDelegate.swift */; };
 		4DD7DF022503B16A0088BD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD7DF002503B16A0088BD8D /* Main.storyboard */; };
 		4DD7DF042503B16D0088BD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD7DF032503B16D0088BD8D /* Assets.xcassets */; };
@@ -126,6 +140,20 @@
 		4DA1FBA3250D211200C73D21 /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		4DA1FBA4250D211200C73D21 /* AppKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKey.swift; sourceTree = "<group>"; };
 		4DA1FBA5250D211200C73D21 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		4DA6898F25F0C8D9001CCF26 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		4DA6899025F0C8D9001CCF26 /* MyProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileViewController.xib; sourceTree = "<group>"; };
+		4DA6899425F0C8F6001CCF26 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		4DA6899525F0C8F6001CCF26 /* EditProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
+		4DA6899925F0C933001CCF26 /* GenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreModel.swift; sourceTree = "<group>"; };
+		4DA6899C25F0C93E001CCF26 /* FlashCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardModel.swift; sourceTree = "<group>"; };
+		4DA689A025F0CDDA001CCF26 /* FlashCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardViewController.swift; sourceTree = "<group>"; };
+		4DA689A125F0CDDA001CCF26 /* FlashCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashCardViewController.xib; sourceTree = "<group>"; };
+		4DA689A725F0CE07001CCF26 /* GenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
+		4DA689A825F0CE07001CCF26 /* GenreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreViewController.xib; sourceTree = "<group>"; };
+		4DA689AD25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFlashcardCollectionViewCell.swift; sourceTree = "<group>"; };
+		4DA689AE25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigFlashcardCollectionViewCell.xib; sourceTree = "<group>"; };
+		4DCD7D1725F18ABF00405BEB /* FlashCardOverViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardOverViewTableViewCell.swift; sourceTree = "<group>"; };
+		4DCD7D1825F18ABF00405BEB /* FlashCardOverViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashCardOverViewTableViewCell.xib; sourceTree = "<group>"; };
 		4DD7DEF72503B16A0088BD8D /* FlashCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD7DEFA2503B16A0088BD8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD7DF012503B16A0088BD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,16 +195,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4D9DDB972503EEEA0057CB23 /* Home */ = {
+		4D9DDB972503EEEA0057CB23 /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
 				4D9DDB992503EF0A0057CB23 /* DictionaryViewController.swift */,
 				4D9DDB9A2503EF0A0057CB23 /* DictionaryViewController.xib */,
 			);
-			path = Home;
+			path = Dictionary;
 			sourceTree = "<group>";
 		};
-		4D9DDB982503EEF40057CB23 /* User */ = {
+		4D9DDB982503EEF40057CB23 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				4D9DDB9D2503EF640057CB23 /* HomeViewController.swift */,
@@ -185,7 +213,7 @@
 				4D9DDBA5250496610057CB23 /* SignIn */,
 				4D9DDBA42504964D0057CB23 /* SignUp */,
 			);
-			path = User;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		4D9DDBA42504964D0057CB23 /* SignUp */ = {
@@ -231,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				4DA1FB8D250D1F5D00C73D21 /* Result.swift */,
+				4DA6899925F0C933001CCF26 /* GenreModel.swift */,
+				4DA6899C25F0C93E001CCF26 /* FlashCardModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,18 +268,13 @@
 		4DA1FB95250D200300C73D21 /* Ultilities */ = {
 			isa = PBXGroup;
 			children = (
+				4DA6898D25F0C887001CCF26 /* CustomView */,
 				4DA1FB96250D200300C73D21 /* Log.swift */,
 				4DA1FB97250D200300C73D21 /* AccountManager.swift */,
 				4DA1FB98250D200300C73D21 /* DataLocal.swift */,
 				4DF959752538354400FD2D7A /* LoadingHud.swift */,
 				4D2B999525393913005681CF /* DeviceInfo.swift */,
 				4D47AE1F25EA65AE00D8006D /* AuthService.swift */,
-				4D47AEB825EB8BBC00D8006D /* HomeHeaderView.swift */,
-				4D47AEBF25EB8C1A00D8006D /* HomeHeaderView.xib */,
-				4D47AED025EC0BBD00D8006D /* MenuView.swift */,
-				4D47AED325EC0BD400D8006D /* MenuView.xib */,
-				4D47AED625EC14A800D8006D /* MenuItemTableViewCell.swift */,
-				4D47AED725EC14A800D8006D /* MenuItemTableViewCell.xib */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -264,6 +289,68 @@
 				4D47AE1B25EA547E00D8006D /* AppConstant.swift */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		4DA6898D25F0C887001CCF26 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				4D47AEB825EB8BBC00D8006D /* HomeHeaderView.swift */,
+				4D47AEBF25EB8C1A00D8006D /* HomeHeaderView.xib */,
+				4D47AED025EC0BBD00D8006D /* MenuView.swift */,
+				4D47AED325EC0BD400D8006D /* MenuView.xib */,
+				4D47AED625EC14A800D8006D /* MenuItemTableViewCell.swift */,
+				4D47AED725EC14A800D8006D /* MenuItemTableViewCell.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		4DA6898E25F0C8B3001CCF26 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4DA6898F25F0C8D9001CCF26 /* MyProfileViewController.swift */,
+				4DA6899025F0C8D9001CCF26 /* MyProfileViewController.xib */,
+				4DA6899425F0C8F6001CCF26 /* EditProfileViewController.swift */,
+				4DA6899525F0C8F6001CCF26 /* EditProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4DA6899F25F0CD0D001CCF26 /* FlashCard */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD7D1625F18A9E00405BEB /* Cells */,
+				4DA689A025F0CDDA001CCF26 /* FlashCardViewController.swift */,
+				4DA689A125F0CDDA001CCF26 /* FlashCardViewController.xib */,
+			);
+			path = FlashCard;
+			sourceTree = "<group>";
+		};
+		4DA689A525F0CDEC001CCF26 /* Genre */ = {
+			isa = PBXGroup;
+			children = (
+				4DA689AC25F0E3CB001CCF26 /* Cells */,
+				4DA689A725F0CE07001CCF26 /* GenreViewController.swift */,
+				4DA689A825F0CE07001CCF26 /* GenreViewController.xib */,
+			);
+			path = Genre;
+			sourceTree = "<group>";
+		};
+		4DA689AC25F0E3CB001CCF26 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4DA689AD25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.swift */,
+				4DA689AE25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4DCD7D1625F18A9E00405BEB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD7D1725F18ABF00405BEB /* FlashCardOverViewTableViewCell.swift */,
+				4DCD7D1825F18ABF00405BEB /* FlashCardOverViewTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		4DD7DEEE2503B16A0088BD8D = {
@@ -306,8 +393,11 @@
 		4DD7DF0E2503B1B10088BD8D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4D9DDB982503EEF40057CB23 /* User */,
-				4D9DDB972503EEEA0057CB23 /* Home */,
+				4DA689A525F0CDEC001CCF26 /* Genre */,
+				4DA6899F25F0CD0D001CCF26 /* FlashCard */,
+				4DA6898E25F0C8B3001CCF26 /* Profile */,
+				4D9DDB982503EEF40057CB23 /* Home */,
+				4D9DDB972503EEEA0057CB23 /* Dictionary */,
 				4DD7DF172503B6A20088BD8D /* Base */,
 			);
 			path = Controller;
@@ -472,14 +562,20 @@
 				4D9DDB9C2503EF0A0057CB23 /* DictionaryViewController.xib in Resources */,
 				4D47AEA625EAC5C800D8006D /* FlashCardCollectionViewCell.xib in Resources */,
 				4D47AEAC25EB7C0400D8006D /* GenreFooterCollectionReusableView.xib in Resources */,
+				4DA689AA25F0CE07001CCF26 /* GenreViewController.xib in Resources */,
 				4D47AE4625EA9A6700D8006D /* AccountHeaderCollectionReusableView.xib in Resources */,
 				4D47AEB625EB865800D8006D /* LastGenreFooterCollectionReusableView.xib in Resources */,
 				4D47AEA125EAC2C600D8006D /* GenreHeaderCollectionReusableView.xib in Resources */,
+				4DCD7D1A25F18ABF00405BEB /* FlashCardOverViewTableViewCell.xib in Resources */,
+				4DA689B025F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.xib in Resources */,
 				4D9DDBA92504968C0057CB23 /* SignInViewController.xib in Resources */,
 				4DD7DF042503B16D0088BD8D /* Assets.xcassets in Resources */,
+				4DA689A325F0CDDA001CCF26 /* FlashCardViewController.xib in Resources */,
 				4D47AED925EC14A800D8006D /* MenuItemTableViewCell.xib in Resources */,
+				4DA6899225F0C8D9001CCF26 /* MyProfileViewController.xib in Resources */,
 				4D47AED425EC0BD400D8006D /* MenuView.xib in Resources */,
 				4DF9594B2538246800FD2D7A /* GoogleService-Info.plist in Resources */,
+				4DA6899725F0C8F6001CCF26 /* EditProfileViewController.xib in Resources */,
 				4D9DDBAD250496990057CB23 /* SignUpViewController.xib in Resources */,
 				4D47AEB125EB7D7300D8006D /* AccountFooterCollectionReusableView.xib in Resources */,
 				4DD7DF022503B16A0088BD8D /* Main.storyboard in Resources */,
@@ -579,7 +675,9 @@
 				4D9DDBB925049F140057CB23 /* UICollectionViewController+Extension.swift in Sources */,
 				4D47AEA525EAC5C800D8006D /* FlashCardCollectionViewCell.swift in Sources */,
 				4D9DDB9F2503EF640057CB23 /* HomeViewController.swift in Sources */,
+				4DCD7D1925F18ABF00405BEB /* FlashCardOverViewTableViewCell.swift in Sources */,
 				4DA1FBA7250D211200C73D21 /* AppKey.swift in Sources */,
+				4DA6899625F0C8F6001CCF26 /* EditProfileViewController.swift in Sources */,
 				4DD7DF2F2503DA200088BD8D /* Localizable.swift in Sources */,
 				4D9DDBC02504D9DB0057CB23 /* UIAlertViewController+Extension.swift in Sources */,
 				4D9DDBBA25049F140057CB23 /* UITableViewController+Extension.swift in Sources */,
@@ -593,6 +691,7 @@
 				4D47AE4525EA9A6700D8006D /* AccountHeaderCollectionReusableView.swift in Sources */,
 				4DA1FB9A250D200300C73D21 /* AccountManager.swift in Sources */,
 				4D47AEAB25EB7C0400D8006D /* GenreFooterCollectionReusableView.swift in Sources */,
+				4DA6899D25F0C93E001CCF26 /* FlashCardModel.swift in Sources */,
 				4D9DDBA32503EFBA0057CB23 /* BaseNavigationController.swift in Sources */,
 				4D9DDBA82504968C0057CB23 /* SignInViewController.swift in Sources */,
 				4DD7DF302503DA200088BD8D /* Assets.swift in Sources */,
@@ -600,16 +699,21 @@
 				4DA1FB7D250CD99E00C73D21 /* Api.swift in Sources */,
 				4D47AEA025EAC2C500D8006D /* GenreHeaderCollectionReusableView.swift in Sources */,
 				4D47AEB925EB8BBC00D8006D /* HomeHeaderView.swift in Sources */,
+				4DA6899125F0C8D9001CCF26 /* MyProfileViewController.swift in Sources */,
 				4DA1FBA6250D211200C73D21 /* AppColor.swift in Sources */,
 				4DF959BA253935F100FD2D7A /* EmptyUserTableViewCell.swift in Sources */,
 				4DF959732538305700FD2D7A /* String+Extension.swift in Sources */,
+				4DA689A925F0CE07001CCF26 /* GenreViewController.swift in Sources */,
 				4DD7DEFB2503B16A0088BD8D /* AppDelegate.swift in Sources */,
 				4D9DDBAC250496990057CB23 /* SignUpViewController.swift in Sources */,
 				4D9DDBBC2504A0BB0057CB23 /* UIImageView+Extension.swift in Sources */,
 				4DA1FB9B250D200300C73D21 /* DataLocal.swift in Sources */,
+				4DA689AF25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.swift in Sources */,
 				4D47AEB525EB865800D8006D /* LastGenreFooterCollectionReusableView.swift in Sources */,
 				4D47AED125EC0BBD00D8006D /* MenuView.swift in Sources */,
 				4DA1FBA8250D211200C73D21 /* AppConfig.swift in Sources */,
+				4DA689A225F0CDDA001CCF26 /* FlashCardViewController.swift in Sources */,
+				4DA6899A25F0C933001CCF26 /* GenreModel.swift in Sources */,
 				4D47AEC325EB93C700D8006D /* BaseView.swift in Sources */,
 				4D47AED825EC14A800D8006D /* MenuItemTableViewCell.swift in Sources */,
 				4D9DDB952503EC5F0057CB23 /* UIColor+Extension.swift in Sources */,

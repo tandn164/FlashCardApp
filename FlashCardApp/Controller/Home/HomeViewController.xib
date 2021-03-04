@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-It-hZv">
-                    <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                    <rect key="frame" x="0.0" y="98" width="414" height="798"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K8L-WD-XVh">
                         <size key="itemSize" width="128" height="128"/>
@@ -42,10 +42,10 @@
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yec-5x-4m9" customClass="HomeHeaderView" customModule="FlashCardApp" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="44" width="414" height="124"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="54"/>
                     <viewLayoutGuide key="safeArea" id="wpD-U7-hpu"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="124" id="wLt-NU-G6e"/>
+                        <constraint firstAttribute="height" constant="54" id="wLt-NU-G6e"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -68,7 +68,7 @@
                 <constraint firstItem="OBH-It-hZv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JhI-Mg-VMB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="man-6a-ilR" secondAttribute="trailing" constant="20" id="QTa-T6-Nrx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="man-6a-ilR" secondAttribute="bottom" constant="20" id="StE-ee-gQM"/>
-                <constraint firstItem="OBH-It-hZv" firstAttribute="top" secondItem="Yec-5x-4m9" secondAttribute="bottom" constant="-74" id="UAT-cJ-xuX"/>
+                <constraint firstItem="OBH-It-hZv" firstAttribute="top" secondItem="Yec-5x-4m9" secondAttribute="bottom" id="UAT-cJ-xuX"/>
                 <constraint firstItem="Yec-5x-4m9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XlD-xe-Na7"/>
                 <constraint firstItem="Yec-5x-4m9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ccy-7W-bTd"/>
                 <constraint firstItem="OBH-It-hZv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zH5-EO-lfT"/>
@@ -79,7 +79,7 @@
     <resources>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="primaryColor">
-            <color red="0.99607843137254903" green="0.50588235294117645" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.99599999189376831" green="0.50599998235702515" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

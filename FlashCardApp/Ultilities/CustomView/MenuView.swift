@@ -68,16 +68,19 @@ class MenuView: UIView {
         addSubview(contentView)
         
         contentView.forceConstraintToSuperView()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.registerCellByNib(MenuItemTableViewCell.self)
+    }
+    
+    func addShadow() {
         contentView.layer.shadowRadius = 5
         contentView.layer.shadowOffset = CGSize(width: 0, height: 5)
         contentView.layer.shadowOpacity = 0.1
         contentView.layer.shadowColor = UIColor.black.cgColor
-        contentView.layer.shadowPath = UIBezierPath(rect: contentView.bounds).cgPath
+        contentView.layer.shadowPath = UIBezierPath(rect: bounds).cgPath
         contentView.layer.cornerRadius = 5
         tableView.layer.cornerRadius = 5
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.registerCellByNib(MenuItemTableViewCell.self)
     }
 }
 

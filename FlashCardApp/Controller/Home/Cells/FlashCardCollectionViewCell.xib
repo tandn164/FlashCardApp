@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FlashCardCollectionViewCell" customModule="FlashCardApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pep-VE-dA7">
+                        <rect key="frame" x="9" y="10" width="40" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDL-OD-qWW">
+                                <rect key="frame" x="9" y="14" width="22.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" name="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="DGV-lj-aMn"/>
+                            <constraint firstAttribute="width" constant="40" id="HOE-rU-JKd"/>
+                            <constraint firstItem="kDL-OD-qWW" firstAttribute="centerY" secondItem="Pep-VE-dA7" secondAttribute="centerY" id="Yi7-Wh-1Ur"/>
+                            <constraint firstItem="kDL-OD-qWW" firstAttribute="centerX" secondItem="Pep-VE-dA7" secondAttribute="centerX" id="rD1-qy-Paz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JLPT N3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkg-Gd-TjQ">
+                        <rect key="frame" x="10" y="60" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" name="blackColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Words:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6f-1M-B0r">
+                        <rect key="frame" x="10" y="87" width="88" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" name="blackColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-oG-d7d">
+                        <rect key="frame" x="10" y="109" width="86" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" name="secondColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pkg-Gd-TjQ" secondAttribute="trailing" constant="10" id="3h1-40-VhG"/>
+                <constraint firstItem="pc1-oG-d7d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="FPh-eu-nx3"/>
+                <constraint firstItem="pkg-Gd-TjQ" firstAttribute="top" secondItem="Pep-VE-dA7" secondAttribute="bottom" constant="10" id="H3B-dC-Oo6"/>
+                <constraint firstItem="pc1-oG-d7d" firstAttribute="top" secondItem="u6f-1M-B0r" secondAttribute="bottom" constant="10" id="JzA-cU-5X4"/>
+                <constraint firstItem="Pep-VE-dA7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="9" id="MQ5-Ke-niv"/>
+                <constraint firstItem="pkg-Gd-TjQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="dBO-1E-i0D"/>
+                <constraint firstItem="u6f-1M-B0r" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="dWU-5x-4kd"/>
+                <constraint firstItem="Pep-VE-dA7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="njR-sm-SYK"/>
+                <constraint firstItem="u6f-1M-B0r" firstAttribute="top" secondItem="pkg-Gd-TjQ" secondAttribute="bottom" constant="10" id="rER-zU-cr5"/>
+                <constraint firstAttribute="trailing" secondItem="pc1-oG-d7d" secondAttribute="trailing" constant="10" id="wbR-cx-LI5"/>
+            </constraints>
+            <size key="customSize" width="106" height="167"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" name="thirdColor"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="flashCardTitle" destination="pkg-Gd-TjQ" id="Yf0-cX-yXG"/>
+                <outlet property="progressView" destination="Pep-VE-dA7" id="Pug-Mw-5gT"/>
+                <outlet property="wordCount" destination="pc1-oG-d7d" id="OJm-b5-e2h"/>
+            </connections>
+            <point key="canvasLocation" x="75.362318840579718" y="98.772321428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="blackColor">
+            <color red="0.18899999558925629" green="0.21799999475479126" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="lightTextColor">
+            <color red="0.54199999570846558" green="0.59500002861022949" blue="0.67100000381469727" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="secondColor">
+            <color red="0.69800001382827759" green="0.3529999852180481" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="thirdColor">
+            <color red="1" green="0.875" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

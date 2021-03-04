@@ -13,5 +13,8 @@ target 'FlashCardApp' do
   pod 'Firebase/Auth'
   pod 'Kingfisher', '~> 5.0'
   pod 'TwitterKit5'
-
+  pod 'ALProgressRing'
+  pod 'LinearProgressBar'
+  pod 'SwipeCellKit'
+  
 end

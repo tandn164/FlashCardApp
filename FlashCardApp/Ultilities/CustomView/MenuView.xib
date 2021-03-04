@@ -34,6 +34,11 @@
                 <constraint firstItem="o0f-fd-zpd" firstAttribute="trailing" secondItem="Dyy-3k-NfL" secondAttribute="trailing" id="evr-NS-0tc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="-226.08695652173915" y="142.29910714285714"/>
         </view>
     </objects>

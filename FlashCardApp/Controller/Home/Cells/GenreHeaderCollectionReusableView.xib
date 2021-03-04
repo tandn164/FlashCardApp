@@ -67,10 +67,10 @@
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <namedColor name="blackColor">
-            <color red="0.1890590489" green="0.21826744079999999" blue="0.2941267192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.18899999558925629" green="0.21799999475479126" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="superLightTextColor">
-            <color red="0.69859385490000003" green="0.72853475810000001" blue="0.7843217254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.69900000095367432" green="0.72899997234344482" blue="0.7839999794960022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
