@@ -32,18 +32,6 @@ class MenuView: UIView {
     @IBOutlet weak var tableView: UITableView!
     weak var delegate: MenuViewDelegate?
     
-//    let menuItem = [MenuItem(title: "Upload",
-//                             icon: UIImage(named: "icUpload"),
-//                             type: .upload),
-//                    MenuItem(title: "Download",
-//                            icon: UIImage(named: "icDownload"),
-//                            type: .download),
-//                    MenuItem(title: "Edit Profile",
-//                             icon: UIImage(named: "icProfile"),
-//                             type: .edit),
-//                    MenuItem(title: "Logout",
-//                             icon: UIImage(named: "icLogout"),
-//                             type: .logout)]
     let menuItem = [MenuItem(title: "Edit Profile",
                              icon: UIImage(named: "icProfile"),
                              type: .edit),

@@ -103,7 +103,7 @@ extension GenreViewController: SwipeCollectionViewCellDelegate, BigFlashcardDele
     }
     
     func seeDetail() {
-        let vc = FlashCardViewController()
+        let vc = FlashCardOverViewController()
         vc.hidesBottomBarWhenPushed = true
         push(vc)
     }

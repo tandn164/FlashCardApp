@@ -10,8 +10,9 @@ import UIKit
 
 class FlashCardOverViewTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var shadowView: ShadowView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 }

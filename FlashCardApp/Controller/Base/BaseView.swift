@@ -206,6 +206,12 @@ extension UIView {
              self.layer.mask = rectShape
          }
     }
+    
+    func setTransformRotation(toDegrees angleInDegrees: CGFloat) {
+        let angleInRadians = angleInDegrees / 180.0 * CGFloat.pi
+        let rotation = self.transform.rotated(by: angleInRadians)
+        self.transform = rotation
+    }
 }
 
 extension UIWindow {

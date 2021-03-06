@@ -33,6 +33,12 @@
 		4D47AED425EC0BD400D8006D /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D47AED325EC0BD400D8006D /* MenuView.xib */; };
 		4D47AED825EC14A800D8006D /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D47AED625EC14A800D8006D /* MenuItemTableViewCell.swift */; };
 		4D47AED925EC14A800D8006D /* MenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D47AED725EC14A800D8006D /* MenuItemTableViewCell.xib */; };
+		4D49DBE025F3DFFA001BA0B6 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49DBDF25F3DFFA001BA0B6 /* ShadowView.swift */; };
+		4D7C06C525F3EA7700402AEA /* FlashCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C06C325F3EA7700402AEA /* FlashCardViewController.swift */; };
+		4D7C06C625F3EA7700402AEA /* FlashCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C06C425F3EA7700402AEA /* FlashCardViewController.xib */; };
+		4D7C06C925F4118A00402AEA /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C06C825F4118A00402AEA /* WordModel.swift */; };
+		4D7C06CC25F4129A00402AEA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C06CB25F4129A00402AEA /* CardView.swift */; };
+		4D7C06CF25F412CF00402AEA /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C06CE25F412CF00402AEA /* CardView.xib */; };
 		4D9DDB952503EC5F0057CB23 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDB942503EC5F0057CB23 /* UIColor+Extension.swift */; };
 		4D9DDB9B2503EF0A0057CB23 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DDB992503EF0A0057CB23 /* DictionaryViewController.swift */; };
 		4D9DDB9C2503EF0A0057CB23 /* DictionaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9DDB9A2503EF0A0057CB23 /* DictionaryViewController.xib */; };
@@ -64,8 +70,8 @@
 		4DA6899725F0C8F6001CCF26 /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA6899525F0C8F6001CCF26 /* EditProfileViewController.xib */; };
 		4DA6899A25F0C933001CCF26 /* GenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6899925F0C933001CCF26 /* GenreModel.swift */; };
 		4DA6899D25F0C93E001CCF26 /* FlashCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6899C25F0C93E001CCF26 /* FlashCardModel.swift */; };
-		4DA689A225F0CDDA001CCF26 /* FlashCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA689A025F0CDDA001CCF26 /* FlashCardViewController.swift */; };
-		4DA689A325F0CDDA001CCF26 /* FlashCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA689A125F0CDDA001CCF26 /* FlashCardViewController.xib */; };
+		4DA689A225F0CDDA001CCF26 /* FlashCardOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA689A025F0CDDA001CCF26 /* FlashCardOverViewController.swift */; };
+		4DA689A325F0CDDA001CCF26 /* FlashCardOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA689A125F0CDDA001CCF26 /* FlashCardOverViewController.xib */; };
 		4DA689A925F0CE07001CCF26 /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA689A725F0CE07001CCF26 /* GenreViewController.swift */; };
 		4DA689AA25F0CE07001CCF26 /* GenreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA689A825F0CE07001CCF26 /* GenreViewController.xib */; };
 		4DA689AF25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA689AD25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.swift */; };
@@ -115,6 +121,12 @@
 		4D47AED325EC0BD400D8006D /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		4D47AED625EC14A800D8006D /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		4D47AED725EC14A800D8006D /* MenuItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemTableViewCell.xib; sourceTree = "<group>"; };
+		4D49DBDF25F3DFFA001BA0B6 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		4D7C06C325F3EA7700402AEA /* FlashCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardViewController.swift; sourceTree = "<group>"; };
+		4D7C06C425F3EA7700402AEA /* FlashCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashCardViewController.xib; sourceTree = "<group>"; };
+		4D7C06C825F4118A00402AEA /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		4D7C06CB25F4129A00402AEA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4D7C06CE25F412CF00402AEA /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		4D9DDB942503EC5F0057CB23 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4D9DDB992503EF0A0057CB23 /* DictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 		4D9DDB9A2503EF0A0057CB23 /* DictionaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DictionaryViewController.xib; sourceTree = "<group>"; };
@@ -146,8 +158,8 @@
 		4DA6899525F0C8F6001CCF26 /* EditProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
 		4DA6899925F0C933001CCF26 /* GenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreModel.swift; sourceTree = "<group>"; };
 		4DA6899C25F0C93E001CCF26 /* FlashCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardModel.swift; sourceTree = "<group>"; };
-		4DA689A025F0CDDA001CCF26 /* FlashCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardViewController.swift; sourceTree = "<group>"; };
-		4DA689A125F0CDDA001CCF26 /* FlashCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashCardViewController.xib; sourceTree = "<group>"; };
+		4DA689A025F0CDDA001CCF26 /* FlashCardOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardOverViewController.swift; sourceTree = "<group>"; };
+		4DA689A125F0CDDA001CCF26 /* FlashCardOverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashCardOverViewController.xib; sourceTree = "<group>"; };
 		4DA689A725F0CE07001CCF26 /* GenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
 		4DA689A825F0CE07001CCF26 /* GenreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreViewController.xib; sourceTree = "<group>"; };
 		4DA689AD25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFlashcardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -261,6 +273,7 @@
 				4DA1FB8D250D1F5D00C73D21 /* Result.swift */,
 				4DA6899925F0C933001CCF26 /* GenreModel.swift */,
 				4DA6899C25F0C93E001CCF26 /* FlashCardModel.swift */,
+				4D7C06C825F4118A00402AEA /* WordModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +313,7 @@
 				4D47AED325EC0BD400D8006D /* MenuView.xib */,
 				4D47AED625EC14A800D8006D /* MenuItemTableViewCell.swift */,
 				4D47AED725EC14A800D8006D /* MenuItemTableViewCell.xib */,
+				4D49DBDF25F3DFFA001BA0B6 /* ShadowView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -319,8 +333,12 @@
 			isa = PBXGroup;
 			children = (
 				4DCD7D1625F18A9E00405BEB /* Cells */,
-				4DA689A025F0CDDA001CCF26 /* FlashCardViewController.swift */,
-				4DA689A125F0CDDA001CCF26 /* FlashCardViewController.xib */,
+				4DA689A025F0CDDA001CCF26 /* FlashCardOverViewController.swift */,
+				4DA689A125F0CDDA001CCF26 /* FlashCardOverViewController.xib */,
+				4D7C06C325F3EA7700402AEA /* FlashCardViewController.swift */,
+				4D7C06C425F3EA7700402AEA /* FlashCardViewController.xib */,
+				4D7C06CB25F4129A00402AEA /* CardView.swift */,
+				4D7C06CE25F412CF00402AEA /* CardView.xib */,
 			);
 			path = FlashCard;
 			sourceTree = "<group>";
@@ -559,6 +577,7 @@
 				4D9DDBA02503EF640057CB23 /* HomeViewController.xib in Resources */,
 				4DD7DF212503D3C90088BD8D /* Localizable.strings in Resources */,
 				4D47AEC025EB8C1A00D8006D /* HomeHeaderView.xib in Resources */,
+				4D7C06C625F3EA7700402AEA /* FlashCardViewController.xib in Resources */,
 				4D9DDB9C2503EF0A0057CB23 /* DictionaryViewController.xib in Resources */,
 				4D47AEA625EAC5C800D8006D /* FlashCardCollectionViewCell.xib in Resources */,
 				4D47AEAC25EB7C0400D8006D /* GenreFooterCollectionReusableView.xib in Resources */,
@@ -570,7 +589,8 @@
 				4DA689B025F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.xib in Resources */,
 				4D9DDBA92504968C0057CB23 /* SignInViewController.xib in Resources */,
 				4DD7DF042503B16D0088BD8D /* Assets.xcassets in Resources */,
-				4DA689A325F0CDDA001CCF26 /* FlashCardViewController.xib in Resources */,
+				4D7C06CF25F412CF00402AEA /* CardView.xib in Resources */,
+				4DA689A325F0CDDA001CCF26 /* FlashCardOverViewController.xib in Resources */,
 				4D47AED925EC14A800D8006D /* MenuItemTableViewCell.xib in Resources */,
 				4DA6899225F0C8D9001CCF26 /* MyProfileViewController.xib in Resources */,
 				4D47AED425EC0BD400D8006D /* MenuView.xib in Resources */,
@@ -669,6 +689,7 @@
 				4D47AE1625EA523500D8006D /* UIView+Extension.swift in Sources */,
 				4D05C5D4253AEF4200FEF150 /* ForgotPasswordViewController.swift in Sources */,
 				4D9DDBB625049DF70057CB23 /* RoundButton.swift in Sources */,
+				4D7C06C525F3EA7700402AEA /* FlashCardViewController.swift in Sources */,
 				4D47AE2025EA65AF00D8006D /* AuthService.swift in Sources */,
 				4DD7DF192503B7380088BD8D /* MainTabBarController.swift in Sources */,
 				4DF959762538354400FD2D7A /* LoadingHud.swift in Sources */,
@@ -679,6 +700,7 @@
 				4DA1FBA7250D211200C73D21 /* AppKey.swift in Sources */,
 				4DA6899625F0C8F6001CCF26 /* EditProfileViewController.swift in Sources */,
 				4DD7DF2F2503DA200088BD8D /* Localizable.swift in Sources */,
+				4D7C06CC25F4129A00402AEA /* CardView.swift in Sources */,
 				4D9DDBC02504D9DB0057CB23 /* UIAlertViewController+Extension.swift in Sources */,
 				4D9DDBBA25049F140057CB23 /* UITableViewController+Extension.swift in Sources */,
 				4D2B999625393913005681CF /* DeviceInfo.swift in Sources */,
@@ -694,6 +716,7 @@
 				4DA6899D25F0C93E001CCF26 /* FlashCardModel.swift in Sources */,
 				4D9DDBA32503EFBA0057CB23 /* BaseNavigationController.swift in Sources */,
 				4D9DDBA82504968C0057CB23 /* SignInViewController.swift in Sources */,
+				4D49DBE025F3DFFA001BA0B6 /* ShadowView.swift in Sources */,
 				4DD7DF302503DA200088BD8D /* Assets.swift in Sources */,
 				4D47AE1925EA53BB00D8006D /* AppPreferences.swift in Sources */,
 				4DA1FB7D250CD99E00C73D21 /* Api.swift in Sources */,
@@ -708,11 +731,12 @@
 				4D9DDBAC250496990057CB23 /* SignUpViewController.swift in Sources */,
 				4D9DDBBC2504A0BB0057CB23 /* UIImageView+Extension.swift in Sources */,
 				4DA1FB9B250D200300C73D21 /* DataLocal.swift in Sources */,
+				4D7C06C925F4118A00402AEA /* WordModel.swift in Sources */,
 				4DA689AF25F0E3FC001CCF26 /* BigFlashcardCollectionViewCell.swift in Sources */,
 				4D47AEB525EB865800D8006D /* LastGenreFooterCollectionReusableView.swift in Sources */,
 				4D47AED125EC0BBD00D8006D /* MenuView.swift in Sources */,
 				4DA1FBA8250D211200C73D21 /* AppConfig.swift in Sources */,
-				4DA689A225F0CDDA001CCF26 /* FlashCardViewController.swift in Sources */,
+				4DA689A225F0CDDA001CCF26 /* FlashCardOverViewController.swift in Sources */,
 				4DA6899A25F0C933001CCF26 /* GenreModel.swift in Sources */,
 				4D47AEC325EB93C700D8006D /* BaseView.swift in Sources */,
 				4D47AED825EC14A800D8006D /* MenuItemTableViewCell.swift in Sources */,
